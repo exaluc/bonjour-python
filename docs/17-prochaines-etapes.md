@@ -74,5 +74,4 @@ Ce code simple offre un bon point de départ pour développer une application pl
 
 Le voyage d'apprentissage de Python est à la fois passionnant et enrichissant. Il ne s'arrête jamais vraiment. Avec la vaste communauté et les nombreuses ressources disponibles, il y a toujours quelque chose de nouveau à apprendre et à explorer.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

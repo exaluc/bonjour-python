@@ -78,5 +78,4 @@ print(MaClasse.ajout)  # Affiche: "Nouvel attribut ajouté"
 
 Ces concepts avancés en Python peuvent sembler déroutants au début, mais ils sont essentiels pour écrire du code Python efficace et modulaire, surtout dans des projets complexes ou des bibliothèques de code.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

@@ -97,5 +97,4 @@ for num in [1, 2, 3, 4]:
 # Résultat : 1, 2, 3, 4
 ```
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

@@ -96,5 +96,4 @@ pip install -r requirements.txt
 
 Respecter les bonnes pratiques est crucial pour assurer la lisibilité, la maintenabilité et la robustesse de vos programmes. En investissant du temps pour maîtriser ces principes, vous vous facilitez la tâche à long terme, tout en améliorant la qualité de vos projets.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

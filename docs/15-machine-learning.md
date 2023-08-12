@@ -71,5 +71,4 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Précision du modèle : {accuracy*100:.2f}%")
 ```
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

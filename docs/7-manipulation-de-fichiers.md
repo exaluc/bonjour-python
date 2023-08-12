@@ -6,9 +6,9 @@ En Python, la manipulation de fichiers est facile. Vous pouvez lire et écrire d
 
 - **Ouvrir un fichier**: Utilisez la fonction `open()`. Par défaut, le fichier est ouvert en mode lecture ('r').
 
-```python
-f = open("mon_fichier.txt", "r")
-```
+  ```python
+  f = open("mon_fichier.txt", "r")
+  ```
 
 - **Lire un fichier**: 
 
@@ -58,14 +58,14 @@ with open("mon_fichier.txt", "r") as f:
 
   - Lire un CSV:
 
-  ```python
-  import csv
-  
-  with open('mon_fichier.csv', mode ='r')as file:
-      csvFile = csv.reader(file)
-      for line in csvFile:
-          print(line)
-  ```
+    ```python
+    import csv
+    
+    with open('mon_fichier.csv', mode ='r')as file:
+        csvFile = csv.reader(file)
+        for line in csvFile:
+            print(line)
+    ```
 
   - Écrire dans un CSV:
 
@@ -116,5 +116,4 @@ with open("mon_fichier.txt", "r") as f:
 
   - Écrire dans un XML est un peu plus complexe. Vous créez des éléments, les ajoutez à l'arbre, puis sauvegardez l'arbre.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

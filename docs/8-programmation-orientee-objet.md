@@ -66,5 +66,4 @@ class ExempleEncapsulation:
 
 - **Abstraction**: Il s'agit de cacher la complexité réelle tout en exposant uniquement les parties essentielles. En POO, cela est réalisé en utilisant des classes et des objets.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

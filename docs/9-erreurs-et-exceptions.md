@@ -57,5 +57,4 @@ except ValeurTropBasse:
 
 Dans cet exemple, nous avons créé deux exceptions personnalisées, `ValeurTropHaute` et `ValeurTropBasse`. Si l'utilisateur entre un nombre trop élevé ou trop bas, l'exception appropriée est levée à l'aide du mot-clé `raise`.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

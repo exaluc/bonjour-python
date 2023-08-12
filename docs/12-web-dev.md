@@ -104,5 +104,4 @@ Accédez à `http://localhost:8000/`.
 
 Le choix du framework dépend des besoins de votre projet. Flask offre flexibilité, Django fournit une suite d'outils complète, et FastAPI est optimal pour les performances élevées et les APIs modernes.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

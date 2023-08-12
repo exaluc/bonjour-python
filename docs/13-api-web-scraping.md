@@ -80,5 +80,4 @@ else:
 
 APIs et Web Scraping sont deux outils puissants qui offrent d'immenses possibilités dans le monde numérique actuel. Qu'il s'agisse de collecter des données pour une analyse approfondie ou d'intégrer des fonctionnalités dans une application, ces méthodes sont essentielles pour quiconque travaille dans le domaine de la technologie. Il est cependant crucial de toujours respecter les conditions d'utilisation des sites web et des services d'API.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

@@ -76,5 +76,4 @@ nombre = str(123)  # nombre vaut "123"
 
 Il existe de nombreuses autres fonctions intégrées en Python, et elles sont conçues pour faciliter et accélérer votre codage.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

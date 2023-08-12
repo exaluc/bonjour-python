@@ -88,5 +88,4 @@ intersection = A & B   # {3, 4}
 difference = A - B     # {1, 2}
 ```
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

@@ -1,0 +1,52 @@
+site_name: Bonjour Python
+site_url: https://loop.brain.fr/bonjour-python
+repo_url: https://github.com/exaluc/bonjour-python
+repo_name: exaluc/bonjour-python
+nav:
+    - Accueil: index.md
+    - Introduction: 1-introduction.md
+    - Bases: 2-bases.md
+    - Contrôle de flux et itération: 3-controle-flux-iterations.md
+    - Structures de données: 4-structures-de-donnees.md
+    - Fonctions: 5-fonctions.md
+    - Modules et Paquets: 6-modules-et-paquets.md
+    - Gestion des fichiers: 7-manipulation-de-fichiers.md
+    - Programmation orientée objet (POO): 8-programmation-orientee-objet.md
+    - Gestion des erreurs et exceptions: 9-erreurs-et-exceptions.md
+    - Concepts avancés: 10-concepts-avances.md
+    - Travailler avec des bases de données: 11-bases-de-donnees.md
+    - Développement web avec Python: 12-web-dev.md
+    - APIs et Web Scraping: 13-api-web-scraping.md
+    - Python pour l'analyse de données: 14-analyse-de-donnees.md
+    - Python pour l'apprentissage automatique: 15-machine-learning.md
+    - Meilleures pratiques et astuces: 16-bonnes-pratiques-et-astuces.md
+    - Conclusion et prochaines étapes: 17-prochaines-etapes.md
+
+theme:
+  name: material
+  highlightjs: true
+  locale: fr
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
+
+copyright: "Copyright &copy; 2023 Lucian BLETAN"
+
+
+extra:
+  generator: false

@@ -92,5 +92,4 @@ for utilisateur in utilisateurs:
 
 Travailler avec des bases de données en Python est assez direct grâce aux modules intégrés et aux puissantes bibliothèques tierces disponibles.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

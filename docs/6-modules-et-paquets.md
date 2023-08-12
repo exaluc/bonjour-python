@@ -83,5 +83,4 @@ donnees = json.loads('{"nom": "Jean", "age": 30}')
 
 C'est une petite fraction de la bibliothèque standard. Elle est vaste et couvre de nombreux domaines, rendant Python puissant et polyvalent dès l'installation.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

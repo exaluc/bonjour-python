@@ -29,5 +29,4 @@ Python est un langage de programmation interprété, haut niveau et orienté obj
         - **MacOS/Linux :** `source mon_environnement/bin/activate`
     - Pour désactiver l'environnement, tapez simplement `deactivate`.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

@@ -99,5 +99,4 @@ plt.show()
 
 Pandas et NumPy sont des outils essentiels pour toute personne souhaitant effectuer une analyse de données avec Python. Ce tutoriel offre une introduction, mais les possibilités offertes par ces bibliothèques sont immenses. Pour devenir vraiment compétent, il est recommandé de pratiquer régulièrement et de consulter la documentation officielle.
 
-
-[🔙 Retour au README principal](./readme.md)
+ 

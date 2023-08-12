@@ -68,5 +68,4 @@ x = "Python"   # Maintenant, x est un str
     - OU logique: `x or y`
     - NON logique: `not x`
 
-
-[🔙 Retour au README principal](./readme.md)
+ 
