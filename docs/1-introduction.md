@@ -1,4 +1,6 @@
-### **Introduction à Python**
+---
+title: Introduction à Python
+---
 
 #### **Qu'est-ce que Python ?**
 Python est un langage de programmation interprété, haut niveau et orienté objet. Il a été créé par Guido van Rossum et a été lancé pour la première fois en 1991. Sa conception simple et sa syntaxe lisible le rendent parfait pour les débutants en programmation. Il est utilisé dans divers domaines tels que le développement web, la science des données, l'intelligence artificielle, l'automatisation, et bien d'autres.
@@ -28,5 +30,3 @@ Python est un langage de programmation interprété, haut niveau et orienté obj
         - **Windows :** `mon_environnement\Scripts\activate`
         - **MacOS/Linux :** `source mon_environnement/bin/activate`
     - Pour désactiver l'environnement, tapez simplement `deactivate`.
-
- 

@@ -21,6 +21,7 @@ nav:
     - Python pour l'apprentissage automatique: 15-machine-learning.md
     - Meilleures pratiques et astuces: 16-bonnes-pratiques-et-astuces.md
     - Conclusion et prochaines étapes: 17-prochaines-etapes.md
+    - Projet de fin: 18-projet-de-fin.md
 
 theme:
   name: material

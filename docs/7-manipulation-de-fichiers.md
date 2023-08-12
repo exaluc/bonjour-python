@@ -1,119 +1,140 @@
-### **Manipulation de Fichiers**
+---
+title: Manipulation de Fichiers
+---
 
-En Python, la manipulation de fichiers est facile. Vous pouvez lire et écrire des fichiers texte, des CSV, des JSON et même des XML.
+En Python, travailler avec des fichiers est un jeu d'enfant! Que ce soit des fichiers texte, des CSV, des JSON, ou des XML, Python vous a couvert.
 
-#### **Lire et Écrire des Fichiers**
+#### **Lire et Écrire des Fichiers** 📄
 
-- **Ouvrir un fichier**: Utilisez la fonction `open()`. Par défaut, le fichier est ouvert en mode lecture ('r').
+- **Ouvrir un fichier** 🚪: Utilisez la fonction `open()`. Par défaut, le fichier est ouvert en mode lecture ('r').
 
   ```python
   f = open("mon_fichier.txt", "r")
   ```
 
-- **Lire un fichier**: 
+- **Lire un fichier** 📖:
 
-  - `read()`: Pour lire le contenu complet.
+  - `read()`: Pour absorber l'intégralité du fichier.
 
   ```python
   contenu = f.read()
+  print(contenu)
   ```
 
-  - `readline()`: Pour lire une ligne.
+  - `readline()`: Si vous voulez juste un petit goût, soit une ligne.
 
   ```python
   premiere_ligne = f.readline()
+  print(premiere_ligne)
   ```
 
-  - `readlines()`: Pour lire toutes les lignes dans une liste.
+  - `readlines()`: Pour dévorer toutes les lignes sous forme de liste.
 
   ```python
   toutes_les_lignes = f.readlines()
+  for ligne in toutes_les_lignes:
+      print(ligne)
   ```
 
-- **Écrire dans un fichier**: Ouvrez le fichier en mode écriture ('w'). Attention, cela écrasera le contenu existant.
+- **Écrire dans un fichier** ✍️: Ouvrez le fichier en mode écriture ('w'). Prenez garde, cela pourrait remplacer ce qui existait déjà!
 
 ```python
 f = open("mon_fichier.txt", "w")
-f.write("Bonjour!")
+f.write("Bonjour, monde!")
 ```
 
-- **Fermer un fichier**: Il est essentiel de fermer un fichier après l'avoir utilisé.
+- **Fermer un fichier** 🔐: C'est comme éteindre la lumière en quittant une pièce. C'est une bonne pratique!
 
 ```python
 f.close()
 ```
 
-- **Utiliser `with`**: Cette méthode est préférée car elle ferme automatiquement le fichier une fois le bloc de code sous-jacent exécuté.
+- **Utiliser `with`** 🤝: Elle est la meilleure amie des programmeurs. Elle prend soin du fichier et le ferme automatiquement pour vous.
 
 ```python
 with open("mon_fichier.txt", "r") as f:
     contenu = f.read()
+    print(contenu)
 ```
 
-#### **Gestion des données CSV, JSON et XML**
+#### **Jongler avec les données CSV, JSON et XML** 🔄
 
-- **CSV (Comma-Separated Values)**:
+- **CSV (Comma-Separated Values)** 📋:
 
-  Python a un module intégré `csv` pour gérer les fichiers CSV.
+  Python possède une boîte à outils intégrée nommée `csv`.
 
-  - Lire un CSV:
+  - Lire un CSV 📜:
 
     ```python
     import csv
     
-    with open('mon_fichier.csv', mode ='r')as file:
-        csvFile = csv.reader(file)
-        for line in csvFile:
-            print(line)
+    with open('mon_fichier.csv', mode ='r')as fichier:
+        lecteur_csv = csv.reader(fichier)
+        for ligne in lecteur_csv:
+            print(", ".join(ligne))
     ```
 
-  - Écrire dans un CSV:
+  - Écrire dans un CSV 🖊:
 
-  ```python
-  with open('mon_fichier.csv', mode ='w')as file:
-      writer = csv.writer(file)
-      writer.writerow(["nom", "age"])
-      writer.writerow(["Jean", 30])
-  ```
+    ```python
+    donnees = [["nom", "age"], ["Jean", 30], ["Marie", 25]]
 
-- **JSON (JavaScript Object Notation)**:
+    with open('mon_fichier.csv', mode ='w')as fichier:
+        ecrivain = csv.writer(fichier)
+        ecrivain.writerows(donnees)
+    ```
 
-  Le module `json` permet d'encoder et de décoder des données JSON.
+- **JSON (JavaScript Object Notation)** 🧬:
 
-  - Lire un JSON:
+  Avec le module `json`, transformer des objets Python en JSON et vice versa est un jeu d'enfant.
 
-  ```python
-  import json
+  - Lire un JSON 🧐:
+
+    ```python
+    import json
   
-  with open('mon_fichier.json', 'r') as file:
-      donnees = json.load(file)
-  ```
+    with open('mon_fichier.json', 'r') as fichier:
+        donnees = json.load(fichier)
+        print(donnees)
+    ```
 
-  - Écrire dans un JSON:
+  - Écrire dans un JSON 🎨:
 
-  ```python
-  donnees = {"nom": "Jean", "age": 30}
+    ```python
+    personne = {"nom": "Jean", "age": 30, "ville": "Paris"}
   
-  with open('mon_fichier.json', 'w') as file:
-      json.dump(donnees, file)
-  ```
+    with open('mon_fichier.json', 'w') as fichier:
+        json.dump(personne, fichier, indent=4)
+    ```
 
-- **XML (eXtensible Markup Language)**:
+- **XML (eXtensible Markup Language)** 🌐:
 
-  Le module `xml.etree.ElementTree` est souvent utilisé pour parcourir et modifier des fichiers XML.
+  `xml.etree.ElementTree` est comme votre GPS pour naviguer à travers les fichiers XML.
 
-  - Lire un XML:
+  - Lire un XML 🗺:
 
-  ```python
-  import xml.etree.ElementTree as ET
+    ```python
+    import xml.etree.ElementTree as ET
   
-  tree = ET.parse('mon_fichier.xml')
-  root = tree.getroot()
+    arbre = ET.parse('mon_fichier.xml')
+    racine = arbre.getroot()
   
-  for elem in root:
-      print(elem.tag, elem.attrib)
-  ```
+    for elem in racine:
+        print(elem.tag, "-", elem.text)
+    ```
 
-  - Écrire dans un XML est un peu plus complexe. Vous créez des éléments, les ajoutez à l'arbre, puis sauvegardez l'arbre.
+  - Écrire dans un XML 🏗:
 
- 
+    ```python
+    import xml.etree.ElementTree as ET
+    
+    racine = ET.Element("personnes")
+    personne = ET.SubElement(racine, "personne", attrib={"id": "1"})
+    ET.SubElement(personne, "nom").text = "Jean"
+    ET.SubElement(personne, "age").text = "30"
+    
+    arbre = ET.ElementTree(racine)
+    arbre.write("mon_fichier.xml")
+    ```
+
+Voilà une plongée enrichie dans la manipulation de fichiers avec Python!

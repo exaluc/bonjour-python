@@ -1,91 +1,97 @@
-### **Structures de Données**
+---
+title: Structures de Données
+---
 
-#### **Listes et Compréhensions de Liste**
+#### **Listes et Compréhensions de Liste** 📜
 
-- **Listes:** Une liste est une collection ordonnée et modifiable d'éléments. Les éléments d'une liste peuvent être de n'importe quel type.
+- **Listes:** Une liste est une collection ordonnée et modifiable. Les éléments peuvent varier en type. 👍
 
 ```python
 ma_liste = [1, 2, 3, 4, "python", 3.14]
 ```
 
-- **Accès aux éléments:** Vous pouvez accéder à un élément de la liste en utilisant son index.
+- **Accès aux éléments:** Les indices font le lien ! 🎯
 
 ```python
 premier_element = ma_liste[0]  # Résultat: 1
-dernier_element = ma_liste[-1]  # Résultat: 3.14
+cinquieme_element = ma_liste[4]  # Résultat: "python"
 ```
 
-- **Modification de la liste:** Les listes sont mutables, ce qui signifie que vous pouvez modifier, ajouter ou supprimer des éléments.
+- **Modification de la liste:** La mutabilité des listes offre une grande flexibilité. 🔄
 
 ```python
-ma_liste[4] = "JAVA"
-ma_liste.append(5)  # Ajoute 5 à la fin de la liste
+ma_liste[4] = "JAVA"  # Remplacer "python" par "JAVA"
+ma_liste.extend([7,8])  # Ajouter plusieurs éléments en une fois
 ```
 
-- **Compréhensions de liste:** C'est une manière concise de créer des listes.
+- **Compréhensions de liste:** Une manière élégante et rapide de générer des listes. ✨
 
 ```python
-carres = [x**2 for x in range(10)]  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+impairs = [x for x in range(10) if x % 2 != 0]  # [1, 3, 5, 7, 9]
 ```
 
-#### **Tuples**
+#### **Tuples** 🔒
 
-- **Tuples:** Un tuple est une collection ordonnée et non modifiable d'éléments.
+- **Tuples:** Similaires aux listes, mais immuables. Idéaux pour des données constantes. 🛑
 
 ```python
-mon_tuple = (1, 2, 3, "python", 3.14)
+jours_semaine = ("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche")
 ```
 
-- **Accès aux éléments:** Semblable aux listes, mais gardez à l'esprit que les tuples sont immuables.
+- **Accès aux éléments:** Comme pour les listes, mais sans modification possible. 
 
 ```python
-premier_element = mon_tuple[0]  # Résultat: 1
+jour1 = jours_semaine[0]  # Résultat: "Lundi"
 ```
 
-#### **Dictionnaires**
+#### **Dictionnaires** 🔑
 
-- **Dictionnaires:** Une collection non ordonnée de paires clé-valeur.
+- **Dictionnaires:** Paires clé-valeur pour un stockage organisé et efficace. 📔
 
 ```python
-mon_dico = {
-    "nom": "Jean",
-    "age": 30,
-    "ville": "Paris"
+personne = {
+    "prénom": "Jean",
+    "nom": "Dupont",
+    "âge": 30,
+    "hobbies": ["lecture", "cinéma", "randonnée"]
 }
 ```
 
-- **Accès et modification:** 
+- **Accès et modification:** Grâce aux clés, c'est un jeu d'enfant ! 🎲
 
 ```python
-nom = mon_dico["nom"]  # Résultat: "Jean"
-mon_dico["age"] = 31   # Modifie l'âge à 31
+nom = personne["nom"]  # Résultat: "Dupont"
+personne["hobbies"].append("natation")  # Ajout d'un hobby
 ```
 
-- **Ajout et suppression de clés:**
+- **Méthodes utiles:** Les dictionnaires ont de nombreuses méthodes pour faciliter la vie. 🧰
 
 ```python
-mon_dico["profession"] = "Ingénieur"
-del mon_dico["ville"]
+cles = personne.keys()  # Renvoie toutes les clés
+valeurs = personne.values()  # Renvoie toutes les valeurs
 ```
 
-#### **Ensembles (Sets)**
+#### **Ensembles (Sets)** 🔗
 
-- **Sets:** Une collection non ordonnée d'éléments uniques.
+- **Sets:** Collections d'éléments uniques. Parfait pour éliminer les doublons ! 🚫
 
 ```python
-mon_ensemble = {1, 2, 3, 4, 4, 5, 5}
+nombres = {1, 2, 3, 3, 4, 4, 5}  # Résultat: {1, 2, 3, 4, 5}
 ```
 
-Cela crée un ensemble avec les éléments `{1, 2, 3, 4, 5}` car les ensembles ne permettent pas les doublons.
-
-- **Opérations courantes sur les ensembles:** union, intersection, différence.
+- **Opérations courantes:** Les sets sont idéaux pour les opérations mathématiques.
 
 ```python
 A = {1, 2, 3, 4}
 B = {3, 4, 5, 6}
-union = A | B          # {1, 2, 3, 4, 5, 6}
-intersection = A & B   # {3, 4}
-difference = A - B     # {1, 2}
+seulement_A = A.difference(B)  # {1, 2}
 ```
 
- 
+---
+
+**Conseils pratiques:** 🚀
+
+- Pour des données fixes et immuables, préférez les tuples.
+- Pour stocker des paires clé-valeur, utilisez les dictionnaires.
+- Si vous devez éliminer des doublons d'une liste, convertissez-la en set, puis à nouveau en liste.
+- Les compréhensions de liste sont puissantes, utilisez-les pour rendre votre code plus pythonique.

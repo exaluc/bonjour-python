@@ -1,19 +1,21 @@
-### **Développement Web avec Python**
+---
+title: Développement Web avec Python
+---
 
-Le développement web en Python est devenu de plus en plus populaire grâce à une variété de frameworks. Parmi eux, Flask, Django et FastAPI se démarquent par leur popularité et leur utilité. Examinons ces trois frameworks et découvrons comment les installer et les utiliser.
+Découvrir le monde du développement web en Python, c'est comme entrer dans une boutique remplie de différentes étagères, chacune offrant un outil adapté à une tâche spécifique. Plongeons dans ce monde fascinant !
 
-#### **Flask: Le Micro-Framework**
+#### **Flask : Le Micro-Framework** 🌱
 
-**Présentation**: Flask est un micro-framework léger, simple et extensible. Parfait pour les petites applications ou lorsque vous souhaitez une grande flexibilité.
+**Présentation** : Flask est comme un bloc Lego de base sur lequel vous pouvez construire ce que vous voulez. Il offre une simplicité et une flexibilité inégalées pour démarrer rapidement.
 
-**Installation**:
+**Installation** :
 ```bash
 pip install Flask
 ```
 
-**Exemple basique**:
+**Exemple basique** :
 ```python
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,87 +23,94 @@ def accueil():
     return "Salut avec Flask!"
 ```
 
-**Démarrer l'application**: Exécutez votre script Python.
-```bash
-python nom_du_script.py
+**Utilisation de templates** : Flask s'intègre facilement avec le moteur de template Jinja2.
+Créez un dossier `templates` et ajoutez un fichier `accueil.html` avec le contenu suivant :
+```html
+<h1>Bienvenue sur mon site Flask</h1>
+<p>{{ message }}</p>
 ```
-Accédez à `http://localhost:5000/` pour voir votre application.
+Puis, modifiez votre route pour renvoyer ce template :
+```python
+@app.route('/')
+def accueil():
+    return render_template("accueil.html", message="Salut encore avec Flask!")
+```
 
 ---
 
-#### **Django: Le Framework Haut-Niveau**
+#### **Django : Le Titan** 🏛️
 
-**Présentation**: Django est complet et suit le modèle "batteries-included". Il est idéal pour les grands projets ou lorsque vous voulez beaucoup de fonctionnalités intégrées.
+**Présentation** : Imaginez un château avec tout ce dont vous avez besoin à l'intérieur. C'est Django, une forteresse pour votre application web, riche en fonctionnalités.
 
-**Installation**:
+**Installation** :
 ```bash
 pip install django
 ```
 
-**Création d'un nouveau projet**:
+**Démarrage rapide** :
+- Création d'un projet et d'une app :
 ```bash
-django-admin startproject nomduprojet
+django-admin startproject monprojet
+cd monprojet
+python manage.py startapp monapp
 ```
 
-**Exemple basique**: 
-
-Dans `nomduprojet/views.py`, ajoutez:
+**Configuration** :
+Pour intégrer `monapp`, ajoutez-le à `INSTALLED_APPS` dans `monprojet/settings.py` :
 ```python
-from django.http import HttpResponse
-
-def accueil(request):
-    return HttpResponse("Salut avec Django!")
-```
-
-Ajoutez la route dans `nomduprojet/urls.py`:
-```python
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('', views.accueil, name='accueil'),
+INSTALLED_APPS = [
+    ...
+    'monapp',
 ]
 ```
 
-**Démarrer l'application**: 
-```bash
-cd nomduprojet
-python manage.py runserver
+**Exemple de modèle** : Dans `monapp/models.py` :
+```python
+from django.db import models
+
+class Article(models.Model):
+    titre = models.CharField(max_length=100)
+    contenu = models.TextField()
 ```
-Accédez à `http://localhost:8000/`.
+
+Après avoir défini votre modèle, n'oubliez pas de faire une migration :
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ---
 
-#### **FastAPI: Le Nouveau Venu**
+#### **FastAPI : La fusée** 🚀
 
-**Présentation**: FastAPI est moderne et basé sur des types standard, ce qui le rend rapide. Idéal pour des APIs modernes.
+**Présentation** : Si Flask est un bloc Lego et Django un château, FastAPI est comme une fusée. Il vous emmène là où vous devez aller, et vite !
 
-**Installation**:
+**Installation** :
 ```bash
 pip install fastapi[all] uvicorn
 ```
 
-**Exemple basique**:
+**Documentation automatique** : L'une des meilleures caractéristiques de FastAPI est qu'il génère une documentation interactive (Swagger UI) pour votre API. Une fois votre application lancée, accédez à `http://localhost:8000/docs`.
+
+**Exemple avec Pydantic** :
+FastAPI utilise Pydantic pour la validation des données :
 ```python
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app = FastAPI()
 
-@app.get("/")
-def lire_racine():
-    return {"Salut": "avec FastAPI"}
-```
+class Article(BaseModel):
+    titre: str
+    contenu: str
 
-**Démarrer l'application**: 
-```bash
-uvicorn nom_du_script:app --reload
+@app.post("/articles/")
+async def create_article(article: Article):
+    return {"titre": article.titre, "contenu": article.contenu}
 ```
-Accédez à `http://localhost:8000/`.
 
 ---
 
-**Conclusion**:
+**Conclusion** :
 
-Le choix du framework dépend des besoins de votre projet. Flask offre flexibilité, Django fournit une suite d'outils complète, et FastAPI est optimal pour les performances élevées et les APIs modernes.
-
- 
+En matière de développement web en Python, il existe un framework pour chaque besoin. Flask pour la flexibilité, Django pour sa richesse, et FastAPI pour la rapidité et la modernité. Votre projet déterminera le meilleur choix ! 💼🔧🖥️

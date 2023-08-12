@@ -1,12 +1,12 @@
-### 15. **Python pour l'Apprentissage Automatique (Machine Learning)**
-
+---
+title: Apprentissage Automatique (Machine Learning)
 ---
 
-Python est un choix de premier ordre pour l'apprentissage automatique, principalement en raison des bibliothèques puissantes qu'il propose. L'une des bibliothèques les plus appréciées pour cela est Scikit-learn. Dans cet article, nous allons découvrir cette bibliothèque et mettre en œuvre certains des algorithmes de machine learning fondamentaux.
+Dans l'univers moderne du big data, Python s'impose comme une référence dans l'apprentissage automatique grâce à des bibliothèques robustes comme Scikit-learn. Ce guide explorera les nuances de Scikit-learn et sa capacité à modéliser des phénomènes complexes à partir de données.
 
-#### **Introduction à Scikit-learn**
+#### **Introduction à Scikit-learn** 📘
 
-Scikit-learn est une bibliothèque pour l'apprentissage automatique en Python. Elle fournit des outils simples et efficaces pour l'analyse de données et la modélisation, avec des implémentations pour une grande variété d'algorithmes.
+Scikit-learn est un pilier de la modélisation en Python, offrant une interface intuitive pour divers algorithmes, des pré-traitements aux méthodes d'évaluation.
 
 **Installation**:
 
@@ -14,61 +14,99 @@ Scikit-learn est une bibliothèque pour l'apprentissage automatique en Python. E
 pip install scikit-learn
 ```
 
-#### **Découverte de Scikit-learn**:
+#### **Préparation des Données avec Scikit-learn** ⚙️
 
-La force de Scikit-learn réside dans son interface cohérente. La plupart du temps, vous allez:
-- Charger vos données
-- Préparer vos données
-- Choisir un modèle
-- Entraîner le modèle
-- Évaluer le modèle
-- Répéter si nécessaire
+Avant toute modélisation, il est crucial de préparer les données. Scikit-learn propose des outils pour cela.
 
-#### **Mise en œuvre d'algorithmes de base en Machine Learning**:
+**Standardisation**:
 
-**1. Régression Linéaire**:
-
-C'est l'un des algorithmes les plus simples. Il est utilisé pour prédire une valeur numérique.
+La mise à l'échelle des données est souvent nécessaire pour que certains algorithmes fonctionnent correctement.
 
 ```python
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
-import numpy as np
+from sklearn.preprocessing import StandardScaler
 
-# Simulons quelques données
-X = 2 * np.random.rand(100, 1)
-y = 4 + 3 * X + np.random.randn(100, 1)
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-model = LinearRegression()
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-
-mse = mean_squared_error(y_test, y_pred)
-print(f"Erreur quadratique moyenne : {mse:.2f}")
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 ```
 
-**2. Classification avec le K plus proches voisins (KNN)**:
-
-Le KNN est un algorithme non paramétrique utilisé pour la classification et la régression.
+**Encodage de variables catégorielles**:
 
 ```python
-from sklearn.datasets import load_iris
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import OneHotEncoder
 
-iris = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2)
+encoder = OneHotEncoder()
+X_encoded = encoder.fit_transform(X_categorical).toarray()
+```
 
-knn = KNeighborsClassifier(n_neighbors=3)
-knn.fit(X_train, y_train)
-y_pred = knn.predict(X_test)
+#### **Modélisation avec Scikit-learn** 🛠️
+
+
+Les algorithmes sont l'âme de la machine learning, et Scikit-learn en propose une multitude.
+
+**3. Machines à Vecteurs de Support (SVM)**:
+
+Les SVM sont puissants pour la classification et la régression.
+
+```python
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report
+
+svm = SVC(kernel='linear')
+svm.fit(X_train_scaled, y_train)
+y_pred = svm.predict(X_test_scaled)
+
+print(classification_report(y_test, y_pred))
+```
+
+**4. Arbres de décision**:
+
+Ils permettent une classification ou une régression basée sur une structure d'arbre.
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+tree = DecisionTreeClassifier()
+tree.fit(X_train, y_train)
+y_pred = tree.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred)
-print(f"Précision du modèle : {accuracy*100:.2f}%")
+print(f"Précision de l'arbre de décision : {accuracy*100:.2f}%")
 ```
 
- 
+#### **Évaluation et Optimisation des Modèles** 🎯
+
+Il ne suffit pas d'entraîner un modèle; il faut l'évaluer et l'optimiser.
+
+**Validation croisée**:
+
+Permet d'évaluer les performances d'un modèle de manière robuste.
+
+```python
+from sklearn.model_selection import cross_val_score
+
+scores = cross_val_score(tree, X_train, y_train, cv=5)
+print(f"Scores de validation croisée: {scores}")
+print(f"Moyenne: {scores.mean():.2f}")
+```
+
+**Recherche par grille (Grid Search)**:
+
+Optimise les hyperparamètres d'un modèle.
+
+```python
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {
+    'n_neighbors': [3, 5, 11, 19],
+    'weights': ['uniform', 'distance'],
+    'metric': ['euclidean', 'manhattan']
+}
+
+grid_search = GridSearchCV(KNeighborsClassifier(), param_grid, cv=5)
+grid_search.fit(X_train, y_train)
+```
+
+#### **Conclusion** 🌟
+
+Scikit-learn est un trésor pour quiconque s'intéresse au machine learning en Python. Son éventail d'outils, allant du pré-traitement à l'évaluation, en fait un incontournable. Bien que ce guide couvre les bases, la maîtrise de Scikit-learn nécessite une exploration approfondie et une pratique régulière. N'hésitez pas à plonger dans la documentation officielle pour une exploration plus détaillée!
