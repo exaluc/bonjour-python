@@ -21,7 +21,7 @@
     
     
       
-        <title>Travailler avec des bases de données - Bonjour Python</title>
+        <title>Travailler avec des Bases de Données en Python - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#travailler-avec-des-bases-de-donnees-en-python" class="md-skip">
+        <a href="#sqlite-et-python" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Travailler avec des bases de données
+              Travailler avec des Bases de Données en Python
             
           </span>
         </div>
@@ -439,36 +439,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#travailler-avec-des-bases-de-donnees-en-python" class="md-nav__link">
-    Travailler avec des Bases de Données en Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Travailler avec des Bases de Données en Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#sqlite-et-python" class="md-nav__link">
-    SQLite et Python
+    SQLite et Python 📁
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#introduction-aux-requetes-sql-en-python" class="md-nav__link">
-    Introduction aux Requêtes SQL en Python
+      
+        <li class="md-nav__item">
+  <a href="#requetes-sql-avancees-en-python" class="md-nav__link">
+    Requêtes SQL avancées en Python 🧐
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#orms-comme-sqlalchemy" class="md-nav__link">
-    ORMs comme SQLAlchemy
+      
+        <li class="md-nav__item">
+  <a href="#orms-sqlalchemy" class="md-nav__link">
+    ORMs: SQLAlchemy 🔄
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +557,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +597,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#travailler-avec-des-bases-de-donnees-en-python" class="md-nav__link">
-    Travailler avec des Bases de Données en Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Travailler avec des Bases de Données en Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#sqlite-et-python" class="md-nav__link">
-    SQLite et Python
+    SQLite et Python 📁
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#introduction-aux-requetes-sql-en-python" class="md-nav__link">
-    Introduction aux Requêtes SQL en Python
+      
+        <li class="md-nav__item">
+  <a href="#requetes-sql-avancees-en-python" class="md-nav__link">
+    Requêtes SQL avancées en Python 🧐
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#orms-comme-sqlalchemy" class="md-nav__link">
-    ORMs comme SQLAlchemy
+      
+        <li class="md-nav__item">
+  <a href="#orms-sqlalchemy" class="md-nav__link">
+    ORMs: SQLAlchemy 🔄
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,83 +637,128 @@
 
   <h1>Travailler avec des bases de données</h1>
 
-<h3 id="travailler-avec-des-bases-de-donnees-en-python"><strong>Travailler avec des Bases de Données en Python</strong></h3>
-<h4 id="sqlite-et-python"><strong>SQLite et Python</strong></h4>
-<p>SQLite est une base de données relationnelle intégrée à Python. Il n'est pas nécessaire d'installer de modules externes pour l'utiliser.</p>
-<p>Exemple d'utilisation de SQLite en Python:</p>
+<h4 id="sqlite-et-python"><strong>SQLite et Python</strong> 📁</h4>
+<p>SQLite est une base de données relationnelle légère qui ne nécessite pas de serveur séparé pour fonctionner. C'est une excellente option pour les applications légères, les prototypes ou les applications de bureau.</p>
+<ol>
+<li><strong>Création et Connexion à la base de données</strong>:</li>
+</ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">sqlite3</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Se connecter à une base de données (ou la créer si elle n&#39;existe pas)</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">connexion</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;ma_base_de_donnees.db&#39;</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Créer une table</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">curseur</span> <span class="o">=</span> <span class="n">connexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="s2">CREATE TABLE IF NOT EXISTS utilisateurs (</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="s2">    id INTEGER PRIMARY KEY,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="s2">    nom TEXT,</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="s2">    age INTEGER</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s2">)</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># Insérer des données</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO utilisateurs (nom, age) VALUES (?, ?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># Valider les modifications</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="n">connexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1"># Fermer la connexion</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">connexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">connexion</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;ma_base_de_donnees.db&#39;</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="introduction-aux-requetes-sql-en-python"><strong>Introduction aux Requêtes SQL en Python</strong></h4>
-<p>On peut exécuter n'importe quelle requête SQL en Python grâce au module <code>sqlite3</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">connexion</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;ma_base_de_donnees.db&#39;</span><span class="p">)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">curseur</span> <span class="o">=</span> <span class="n">connexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Sélectionner des données</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM utilisateurs&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">utilisateurs</span> <span class="o">=</span> <span class="n">curseur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">for</span> <span class="n">utilisateur</span> <span class="ow">in</span> <span class="n">utilisateurs</span><span class="p">:</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">utilisateur</span><span class="p">)</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">connexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<ol>
+<li><strong>Manipulation de Tables</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">curseur</span> <span class="o">=</span> <span class="n">connexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="s2">CREATE TABLE IF NOT EXISTS utilisateurs (</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="s2">    id INTEGER PRIMARY KEY,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="s2">    nom TEXT NOT NULL,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s2">    age INTEGER</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="s2">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="orms-comme-sqlalchemy"><strong>ORMs comme SQLAlchemy</strong></h4>
-<p>Un ORM (Object-Relational Mapping) permet de travailler avec des bases de données en utilisant la POO. SQLAlchemy est l'un des ORM les plus populaires en Python.</p>
-<p>Exemple basique d'utilisation de SQLAlchemy:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">Sequence</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">class</span> <span class="nc">Utilisateur</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;utilisateurs&#39;</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Sequence</span><span class="p">(</span><span class="s1">&#39;utilisateur_id_seq&#39;</span><span class="p">),</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">nom</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">age</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># Connecter à la base de données</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///ma_base_de_donnees.db&#39;</span><span class="p">)</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># Créer une session</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="c1"># Ajouter un utilisateur</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="n">nouvel_utilisateur</span> <span class="o">=</span> <span class="n">Utilisateur</span><span class="p">(</span><span class="n">nom</span><span class="o">=</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nouvel_utilisateur</span><span class="p">)</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
-<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="c1"># Récupérer des utilisateurs</span>
-<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="n">utilisateurs</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Utilisateur</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="k">for</span> <span class="n">utilisateur</span> <span class="ow">in</span> <span class="n">utilisateurs</span><span class="p">:</span>
-<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">utilisateur</span><span class="o">.</span><span class="n">nom</span><span class="p">,</span> <span class="n">utilisateur</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+<ol>
+<li><strong>Insertion de données</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO utilisateurs (nom, age) VALUES (?, ?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">connexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li><strong>Mise à jour de données</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;UPDATE utilisateurs SET age = ? WHERE nom = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="s2">&quot;Alice&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">connexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li><strong>Suppression de données</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM utilisateurs WHERE nom = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,))</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">connexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="requetes-sql-avancees-en-python"><strong>Requêtes SQL avancées en Python</strong> 🧐</h4>
+<ol>
+<li><strong>Filtrage</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM utilisateurs WHERE age &gt; 25&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">utilisateurs_majeurs</span> <span class="o">=</span> <span class="n">curseur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li><strong>Tri</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM utilisateurs ORDER BY age DESC&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">utilisateurs_ordonnes</span> <span class="o">=</span> <span class="n">curseur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li><strong>Jointures</strong>:</li>
+</ol>
+<p>Si nous avons une autre table, disons <code>commandes</code>, nous pouvons lier les données entre les tables.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">curseur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s2">SELECT u.nom, c.produit </span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s2">FROM utilisateurs u </span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="s2">JOIN commandes c ON u.id = c.id_utilisateur</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">resultat_jointure</span> <span class="o">=</span> <span class="n">curseur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="orms-sqlalchemy"><strong>ORMs: SQLAlchemy</strong> 🔄</h4>
+<p>SQLAlchemy est un ORM qui permet de traduire les opérations avec la base de données en commandes Python.</p>
+<ol>
+<li><strong>Modélisation</strong>:</li>
+</ol>
+<p>Avec SQLAlchemy, chaque table est représentée par une classe.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">class</span> <span class="nc">Utilisateur</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;utilisateurs&#39;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="n">nom</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">age</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li><strong>Création et Manipulation de la base de données</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///ma_base_de_donnees.db&#39;</span><span class="p">)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li>
+<p><strong>Opérations CRUD</strong>:</p>
+</li>
+<li>
+<p>Création:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">bob</span> <span class="o">=</span> <span class="n">Utilisateur</span><span class="p">(</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">bob</span><span class="p">)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<ul>
+<li>Lecture:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">utilisateurs</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Utilisateur</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">Utilisateur</span><span class="o">.</span><span class="n">age</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+<ul>
+<li>Mise à jour:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">utilisateur</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Utilisateur</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">Utilisateur</span><span class="o">.</span><span class="n">nom</span> <span class="o">==</span> <span class="s2">&quot;Bob&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">utilisateur</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">36</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<ul>
+<li>Suppression:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">utilisateur</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 </code></pre></div>
 <hr />
-<p>Travailler avec des bases de données en Python est assez direct grâce aux modules intégrés et aux puissantes bibliothèques tierces disponibles.</p>
+<p>Travailler avec des bases de données est un élément essentiel pour de nombreuses applications Python, que ce soit pour stocker des données locales ou pour interagir avec des bases de données externes. La facilité d'utilisation et la flexibilité offertes par Python dans ce domaine le rendent particulièrement attrayant pour le développement de bases de données. 📚👩‍💻👨‍💻🌐</p>
 
 
 

@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules-et-paquets" class="md-skip">
+        <a href="#quest-ce-que-sont-les-modules-et-les-paquets" class="md-skip">
           Skip to content
         </a>
       
@@ -364,36 +364,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules-et-paquets" class="md-nav__link">
-    Modules et Paquets
-  </a>
-  
-    <nav class="md-nav" aria-label="Modules et Paquets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#quest-ce-que-sont-les-modules-et-les-paquets" class="md-nav__link">
-    Qu'est-ce que sont les Modules et les Paquets?
+    Qu'est-ce que sont les Modules et les Paquets? 🧩
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#importer-des-modules" class="md-nav__link">
-    Importer des Modules
+    Importer des Modules 🔄
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#explorer-la-bibliotheque-standard-python" class="md-nav__link">
-    Explorer la Bibliothèque Standard Python
+    Explorer la Bibliothèque Standard Python 📚
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +557,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +597,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules-et-paquets" class="md-nav__link">
-    Modules et Paquets
-  </a>
-  
-    <nav class="md-nav" aria-label="Modules et Paquets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#quest-ce-que-sont-les-modules-et-les-paquets" class="md-nav__link">
-    Qu'est-ce que sont les Modules et les Paquets?
+    Qu'est-ce que sont les Modules et les Paquets? 🧩
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#importer-des-modules" class="md-nav__link">
-    Importer des Modules
+    Importer des Modules 🔄
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#explorer-la-bibliotheque-standard-python" class="md-nav__link">
-    Explorer la Bibliothèque Standard Python
+    Explorer la Bibliothèque Standard Python 📚
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,15 +637,14 @@
 
   <h1>Modules et Paquets</h1>
 
-<h3 id="modules-et-paquets"><strong>Modules et Paquets</strong></h3>
-<p>Dans la programmation Python, un module est un fichier contenant des définitions et des instructions Python. Le fichier nommé <code>module.py</code> a le nom de module <code>module</code> que vous pouvez utiliser dans un script Python avec le mot-clé <code>import</code>. Un paquet est une manière d'organiser des modules connexes dans un répertoire.</p>
-<h4 id="quest-ce-que-sont-les-modules-et-les-paquets"><strong>Qu'est-ce que sont les Modules et les Paquets?</strong></h4>
+<p>En programmation Python, un module est un fichier contenant des définitions et des instructions Python. Le fichier nommé <code>module.py</code> a le nom de module <code>module</code> que vous pouvez utiliser dans un script Python avec le mot-clé <code>import</code>. Un paquet est une manière d'organiser des modules connexes dans un répertoire.</p>
+<h4 id="quest-ce-que-sont-les-modules-et-les-paquets"><strong>Qu'est-ce que sont les Modules et les Paquets?</strong> 🧩</h4>
 <ul>
-<li><strong>Modules</strong>: Un module est essentiellement un fichier contenant du code Python. Il peut définir des fonctions, des classes et des variables, et peut également inclure du code exécutable.</li>
+<li><strong>Modules 📄</strong>: Un module est essentiellement un fichier contenant du code Python. Il peut définir des fonctions, des classes et des variables, et peut également inclure du code exécutable.</li>
 </ul>
 <p>Exemple: <code>mon_module.py</code></p>
 <ul>
-<li><strong>Paquets</strong>: Un paquet est un moyen d'organiser plusieurs modules en un seul répertoire. Ce répertoire contient un fichier spécial appelé <code>__init__.py</code> (qui peut être vide) pour indiquer à Python que le répertoire doit être traité comme un paquet ou un module.</li>
+<li><strong>Paquets 📁</strong>: Un paquet est un moyen d'organiser plusieurs modules en un seul répertoire. Ce répertoire contient un fichier spécial appelé <code>__init__.py</code> pour indiquer à Python que le répertoire doit être traité comme un paquet.</li>
 </ul>
 <p>Structure d'un paquet:
   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mon_paquet/
@@ -664,57 +652,66 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├─ module1.py
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└─ module2.py
 </code></pre></div></p>
-<h4 id="importer-des-modules"><strong>Importer des Modules</strong></h4>
+<h4 id="importer-des-modules"><strong>Importer des Modules</strong> 🔄</h4>
 <ul>
-<li><strong>Importation d'un module</strong>: Pour utiliser un module, vous devez l'importer à l'aide du mot-clé <code>import</code>.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">mon_module</span>
+<li>
+<p><strong>Importation d'un module</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">mon_module</span>
 </code></pre></div>
-<p>Après cette importation, vous pouvez accéder aux fonctions ou variables définies dans <code>mon_module</code> en utilisant <code>mon_module.nom_fonction</code> ou <code>mon_module.nom_variable</code>.</p>
+  Après cette importation, vous pouvez accéder aux fonctions ou variables définies dans <code>mon_module</code> avec <code>mon_module.nom_fonction</code>.</p>
+</li>
+<li>
+<p><strong>Alias lors de l'importation</strong> 🏷:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">mon_module</span> <span class="k">as</span> <span class="nn">mm</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Importer des éléments spécifiques d'un module</strong> ⚙:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mon_module</span> <span class="kn">import</span> <span class="n">ma_fonction</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h4 id="explorer-la-bibliotheque-standard-python"><strong>Explorer la Bibliothèque Standard Python</strong> 📚</h4>
+<p>La bibliothèque standard Python offre une collection impressionnante de modules prêts à l'emploi. Voici quelques modules couramment utilisés:</p>
 <ul>
-<li><strong>Alias lors de l'importation</strong>: Vous pouvez donner un alias au module lors de l'importation pour simplifier ou clarifier le code.</li>
+<li>
+<p><strong><code>math</code></strong> 🧮: Fonctions mathématiques.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">math</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>  <span class="c1"># Convertit les degrés en radians</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong><code>datetime</code></strong> ⏰: Manipulation des dates et des temps.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">une_semaine</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong><code>os</code></strong> 💽: Interaction avec le système d'exploitation.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">liste_fichiers</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>  <span class="c1"># Liste tous les fichiers du répertoire courant</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong><code>sys</code></strong> 🖥: Interagit avec l'interpréteur Python.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">sys</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">version</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span>  <span class="c1"># Récupère la version de Python en cours d&#39;exécution</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong><code>json</code></strong> 📜: Encodage et décodage du format JSON.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span> <span class="nn">json</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">donnees</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Jean&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>  <span class="c1"># Convertit un dictionnaire en chaîne JSON</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong><code>random</code></strong> 🎲: Génère des nombres aléatoires.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span> <span class="nn">random</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">nombre</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># Génère un nombre aléatoire entre 1 et 10</span>
+</code></pre></div></p>
+</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">mon_module</span> <span class="k">as</span> <span class="nn">mm</span>
-</code></pre></div>
-<ul>
-<li><strong>Importer des éléments spécifiques d'un module</strong>: Vous pouvez importer des éléments spécifiques d'un module plutôt que le module entier.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mon_module</span> <span class="kn">import</span> <span class="n">ma_fonction</span>
-</code></pre></div>
-<h4 id="explorer-la-bibliotheque-standard-python"><strong>Explorer la Bibliothèque Standard Python</strong></h4>
-<p>La bibliothèque standard Python est une vaste collection de modules qui sont inclus avec Python et fournissent des fonctionnalités essentielles, allant de l'accès au système d'exploitation aux outils de programmation web.</p>
-<p>Voici quelques modules couramment utilisés:</p>
-<ul>
-<li><strong><code>math</code></strong>: Fournit des fonctions mathématiques.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">math</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">racine_carree</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>  <span class="c1"># 4.0</span>
-</code></pre></div>
-<ul>
-<li><strong><code>datetime</code></strong>: Pour manipuler les dates et les temps.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">maintenant</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-</code></pre></div>
-<ul>
-<li><strong><code>os</code></strong>: Fournit des fonctions pour interagir avec le système d'exploitation.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">os</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">rep_courant</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>  <span class="c1"># Renvoie le répertoire courant</span>
-</code></pre></div>
-<ul>
-<li><strong><code>sys</code></strong>: Accède à certaines variables utilisées ou maintenues par l'interpréteur et aux fonctions qui interagissent fortement avec l'interpréteur.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">sys</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>  <span class="c1"># Quitte l&#39;interpréteur Python</span>
-</code></pre></div>
-<ul>
-<li><strong><code>json</code></strong>: Pour encoder et décoder le format JSON.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span> <span class="nn">json</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">donnees</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="s1">&#39;{&quot;nom&quot;: &quot;Jean&quot;, &quot;age&quot;: 30}&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>C'est une petite fraction de la bibliothèque standard. Elle est vaste et couvre de nombreux domaines, rendant Python puissant et polyvalent dès l'installation.</p>
+<p>Ces modules ne sont qu'un petit aperçu de ce que la bibliothèque standard a à offrir. Elle est vaste et couvre presque tous les domaines imaginables, faisant de Python un outil puissant dès l'installation.</p>
 
 
 

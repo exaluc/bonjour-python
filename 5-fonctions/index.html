@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fonctions" class="md-skip">
+        <a href="#definition-et-appel-de-fonctions" class="md-skip">
           Skip to content
         </a>
       
@@ -349,36 +349,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fonctions" class="md-nav__link">
-    Fonctions
-  </a>
-  
-    <nav class="md-nav" aria-label="Fonctions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#definition-et-appel-de-fonctions" class="md-nav__link">
-    Définition et Appel de Fonctions
+    Définition et Appel de Fonctions 📝
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fonctions-lambda" class="md-nav__link">
-    Fonctions Lambda
+    Fonctions Lambda ⚡
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fonctions-integrees" class="md-nav__link">
-    Fonctions Intégrées
+    Fonctions Intégrées 🔧
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +557,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +597,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fonctions" class="md-nav__link">
-    Fonctions
-  </a>
-  
-    <nav class="md-nav" aria-label="Fonctions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#definition-et-appel-de-fonctions" class="md-nav__link">
-    Définition et Appel de Fonctions
+    Définition et Appel de Fonctions 📝
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fonctions-lambda" class="md-nav__link">
-    Fonctions Lambda
+    Fonctions Lambda ⚡
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fonctions-integrees" class="md-nav__link">
-    Fonctions Intégrées
+    Fonctions Intégrées 🔧
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,67 +637,69 @@
 
   <h1>Fonctions</h1>
 
-<h3 id="fonctions"><strong>Fonctions</strong></h3>
-<p>Les fonctions sont des blocs de code réutilisables qui effectuent une tâche spécifique. En Python, il existe des fonctions intégrées, et vous pouvez également définir vos propres fonctions.</p>
-<h4 id="definition-et-appel-de-fonctions"><strong>Définition et Appel de Fonctions</strong></h4>
+<p>Les fonctions sont des outils essentiels en programmation, permettant d'encapsuler du code pour des tâches spécifiques. Python regorge de fonctions prêtes à l'emploi, mais vous avez aussi la liberté de créer les vôtres.</p>
+<h4 id="definition-et-appel-de-fonctions"><strong>Définition et Appel de Fonctions</strong> 📝</h4>
 <ul>
-<li><strong>Définir une fonction</strong> avec le mot-clé <code>def</code> suivi du nom de la fonction et des parenthèses <code>()</code>:</li>
+<li><strong>Définir une fonction</strong> se fait avec le mot-clé <code>def</code>. Pensez-y comme à une recette que vous pouvez suivre encore et encore 🍪:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">():</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour depuis ma fonction!&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Salut! C&#39;est moi, ta fonction!&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><strong>Appel de la fonction</strong> en utilisant son nom suivi de parenthèses:</li>
+<li><strong>Pour utiliser la recette (fonction)</strong>, il suffit de l'appeler par son nom:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">ma_fonction</span><span class="p">()</span>  <span class="c1"># Affiche: &quot;Bonjour depuis ma fonction!&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">ma_fonction</span><span class="p">()</span>  <span class="c1"># Affiche: &quot;Salut! C&#39;est moi, ta fonction!&quot;</span>
 </code></pre></div>
 <ul>
-<li><strong>Paramètres:</strong> Une fonction peut accepter des valeurs, appelées paramètres, qui affectent son comportement:</li>
+<li><strong>Paramètres:</strong> Pensez aux paramètres comme aux ingrédients d'une recette. Ils changent le résultat final 🍰:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">saluer</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">cafe</span><span class="p">(</span><span class="n">ingredient</span><span class="p">):</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Voici votre café avec </span><span class="si">{</span><span class="n">ingredient</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">saluer</span><span class="p">(</span><span class="s2">&quot;Lucian&quot;</span><span class="p">)</span>  <span class="c1"># Affiche: &quot;Bonjour, Lucian!&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">cafe</span><span class="p">(</span><span class="s2">&quot;du lait&quot;</span><span class="p">)</span>  <span class="c1"># Affiche: &quot;Voici votre café avec du lait!&quot;</span>
 </code></pre></div>
 <ul>
-<li><strong>Retour de valeur:</strong> Une fonction peut renvoyer une valeur à l'aide du mot-clé <code>return</code>:</li>
+<li><strong>Retour de valeur:</strong> Parfois, une fonction doit vous donner quelque chose en retour 🎁:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span> <span class="nf">additionner</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span> <span class="nf">multiplier</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">additionner</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># resultat vaut 7</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">double</span> <span class="o">=</span> <span class="n">multiplier</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># double vaut 6</span>
 </code></pre></div>
-<h4 id="fonctions-lambda"><strong>Fonctions Lambda</strong></h4>
-<p>Une fonction lambda est une petite fonction anonyme qui peut avoir un nombre quelconque de paramètres, mais ne peut avoir qu'une seule expression.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">carre</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">carre</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Affiche: 25</span>
+<h4 id="fonctions-lambda"><strong>Fonctions Lambda</strong> ⚡</h4>
+<p>Les fonctions lambda sont comme des raccourcis. Rapides et efficaces pour de petites tâches:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">inverse</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">inverse</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># Affiche: 0.5</span>
 </code></pre></div>
-<h4 id="fonctions-integrees"><strong>Fonctions Intégrées</strong></h4>
-<p>Python fournit de nombreuses fonctions intégrées qui sont toujours disponibles. Voici quelques exemples courants:</p>
+<h4 id="fonctions-integrees"><strong>Fonctions Intégrées</strong> 🔧</h4>
+<p>Python est comme une boîte à outils géante avec toutes sortes d'outils préfabriqués:</p>
 <ul>
-<li><strong><code>print()</code></strong>: Affiche des messages ou des variables:</li>
+<li><strong><code>print()</code></strong>: Votre outil pour envoyer des messages:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour!&quot;</span><span class="p">)</span>
-</code></pre></div>
-<ul>
-<li><strong><code>len()</code></strong>: Renvoie la longueur d'un objet, comme une liste ou une chaîne:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">longueur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>  <span class="c1"># longueur vaut 6</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Salut, monde!&quot;</span><span class="p">)</span>  <span class="c1"># 🌍</span>
 </code></pre></div>
 <ul>
-<li><strong><code>type()</code></strong>: Renvoie le type d'un objet:</li>
+<li><strong><code>len()</code></strong>: Mesurez tout ce qui est mesurable, comme les chaînes de caractères:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">typ</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>  <span class="c1"># typ vaut &lt;class &#39;int&#39;&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">taille</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;Chat&quot;</span><span class="p">)</span>  <span class="c1"># taille vaut 4 🐱</span>
 </code></pre></div>
 <ul>
-<li><strong><code>str()</code>, <code>int()</code>, <code>float()</code></strong>: Convertissent des valeurs en chaîne de caractères, entier ou nombre à virgule flottante respectivement:</li>
+<li><strong><code>type()</code></strong>: Quel genre d'outil avez-vous là?</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>  <span class="c1"># nombre vaut &quot;123&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">typ</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># typ vaut &lt;class &#39;bool&#39;&gt; 🚦</span>
 </code></pre></div>
 <ul>
-<li><strong><code>list()</code>, <code>tuple()</code>, <code>dict()</code>, <code>set()</code></strong>: Convertissent des valeurs en liste, tuple, dictionnaire ou ensemble respectivement.</li>
+<li><strong>Conversions</strong>: Transformer un outil en un autre:</li>
 </ul>
-<p>Il existe de nombreuses autres fonctions intégrées en Python, et elles sont conçues pour faciliter et accélérer votre codage.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">texte</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">456</span><span class="p">)</span>  <span class="c1"># texte vaut &quot;456&quot; 📜</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">sequence</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">)</span>  <span class="c1"># sequence vaut [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] 📋</span>
+</code></pre></div>
+<ul>
+<li><strong>Créations</strong>: Fabriquer des structures de données:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">mon_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># mon_set vaut {1, 2, 3} 🧱</span>
+</code></pre></div>
+<p>Pensez aux fonctions intégrées comme à des amis qui sont toujours là pour vous aider ! 😊</p>
 
 
 

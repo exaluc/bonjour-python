@@ -21,7 +21,7 @@
     
     
       
-        <title>Développement web avec Python - Bonjour Python</title>
+        <title>Développement Web avec Python - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developpement-web-avec-python" class="md-skip">
+        <a href="#flask-le-micro-framework" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Développement web avec Python
+              Développement Web avec Python
             
           </span>
         </div>
@@ -454,36 +454,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developpement-web-avec-python" class="md-nav__link">
-    Développement Web avec Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Développement Web avec Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#flask-le-micro-framework" class="md-nav__link">
-    Flask: Le Micro-Framework
+    Flask : Le Micro-Framework 🌱
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#django-le-framework-haut-niveau" class="md-nav__link">
-    Django: Le Framework Haut-Niveau
+      
+        <li class="md-nav__item">
+  <a href="#django-le-titan" class="md-nav__link">
+    Django : Le Titan 🏛️
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#fastapi-le-nouveau-venu" class="md-nav__link">
-    FastAPI: Le Nouveau Venu
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-la-fusee" class="md-nav__link">
+    FastAPI : La fusée 🚀
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +557,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +597,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developpement-web-avec-python" class="md-nav__link">
-    Développement Web avec Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Développement Web avec Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#flask-le-micro-framework" class="md-nav__link">
-    Flask: Le Micro-Framework
+    Flask : Le Micro-Framework 🌱
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#django-le-framework-haut-niveau" class="md-nav__link">
-    Django: Le Framework Haut-Niveau
+      
+        <li class="md-nav__item">
+  <a href="#django-le-titan" class="md-nav__link">
+    Django : Le Titan 🏛️
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#fastapi-le-nouveau-venu" class="md-nav__link">
-    FastAPI: Le Nouveau Venu
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-la-fusee" class="md-nav__link">
+    FastAPI : La fusée 🚀
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,76 +637,85 @@
 
   <h1>Développement web avec Python</h1>
 
-<h3 id="developpement-web-avec-python"><strong>Développement Web avec Python</strong></h3>
-<p>Le développement web en Python est devenu de plus en plus populaire grâce à une variété de frameworks. Parmi eux, Flask, Django et FastAPI se démarquent par leur popularité et leur utilité. Examinons ces trois frameworks et découvrons comment les installer et les utiliser.</p>
-<h4 id="flask-le-micro-framework"><strong>Flask: Le Micro-Framework</strong></h4>
-<p><strong>Présentation</strong>: Flask est un micro-framework léger, simple et extensible. Parfait pour les petites applications ou lorsque vous souhaitez une grande flexibilité.</p>
-<p><strong>Installation</strong>:
+<p>Découvrir le monde du développement web en Python, c'est comme entrer dans une boutique remplie de différentes étagères, chacune offrant un outil adapté à une tâche spécifique. Plongeons dans ce monde fascinant !</p>
+<h4 id="flask-le-micro-framework"><strong>Flask : Le Micro-Framework</strong> 🌱</h4>
+<p><strong>Présentation</strong> : Flask est comme un bloc Lego de base sur lequel vous pouvez construire ce que vous voulez. Il offre une simplicité et une flexibilité inégalées pour démarrer rapidement.</p>
+<p><strong>Installation</strong> :
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>Flask
 </code></pre></div></p>
-<p><strong>Exemple basique</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<p><strong>Exemple basique</strong> :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">def</span> <span class="nf">accueil</span><span class="p">():</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="k">return</span> <span class="s2">&quot;Salut avec Flask!&quot;</span>
 </code></pre></div></p>
-<p><strong>Démarrer l'application</strong>: Exécutez votre script Python.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>nom_du_script.py
+<p><strong>Utilisation de templates</strong> : Flask s'intègre facilement avec le moteur de template Jinja2.
+Créez un dossier <code>templates</code> et ajoutez un fichier <code>accueil.html</code> avec le contenu suivant :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Bienvenue sur mon site Flask<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ message }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
-Accédez à <code>http://localhost:5000/</code> pour voir votre application.</p>
+Puis, modifiez votre route pour renvoyer ce template :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">def</span> <span class="nf">accueil</span><span class="p">():</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;accueil.html&quot;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Salut encore avec Flask!&quot;</span><span class="p">)</span>
+</code></pre></div></p>
 <hr />
-<h4 id="django-le-framework-haut-niveau"><strong>Django: Le Framework Haut-Niveau</strong></h4>
-<p><strong>Présentation</strong>: Django est complet et suit le modèle "batteries-included". Il est idéal pour les grands projets ou lorsque vous voulez beaucoup de fonctionnalités intégrées.</p>
-<p><strong>Installation</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>django
+<h4 id="django-le-titan"><strong>Django : Le Titan</strong> 🏛️</h4>
+<p><strong>Présentation</strong> : Imaginez un château avec tout ce dont vous avez besoin à l'intérieur. C'est Django, une forteresse pour votre application web, riche en fonctionnalités.</p>
+<p><strong>Installation</strong> :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>django
 </code></pre></div></p>
-<p><strong>Création d'un nouveau projet</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>django-admin<span class="w"> </span>startproject<span class="w"> </span>nomduprojet
+<p><strong>Démarrage rapide</strong> :
+- Création d'un projet et d'une app :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>django-admin<span class="w"> </span>startproject<span class="w"> </span>monprojet
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>monprojet
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>startapp<span class="w"> </span>monapp
 </code></pre></div></p>
-<p><strong>Exemple basique</strong>: </p>
-<p>Dans <code>nomduprojet/views.py</code>, ajoutez:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">accueil</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;Salut avec Django!&quot;</span><span class="p">)</span>
+<p><strong>Configuration</strong> :
+Pour intégrer <code>monapp</code>, ajoutez-le à <code>INSTALLED_APPS</code> dans <code>monprojet/settings.py</code> :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="o">...</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="s1">&#39;monapp&#39;</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">]</span>
 </code></pre></div></p>
-<p>Ajoutez la route dans <code>nomduprojet/urls.py</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">views</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">accueil</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;accueil&#39;</span><span class="p">),</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">]</span>
+<p><strong>Exemple de modèle</strong> : Dans <code>monapp/models.py</code> :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">class</span> <span class="nc">Article</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">titre</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">contenu</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
 </code></pre></div></p>
-<p><strong>Démarrer l'application</strong>: 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>nomduprojet
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
-</code></pre></div>
-Accédez à <code>http://localhost:8000/</code>.</p>
+<p>Après avoir défini votre modèle, n'oubliez pas de faire une migration :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+</code></pre></div></p>
 <hr />
-<h4 id="fastapi-le-nouveau-venu"><strong>FastAPI: Le Nouveau Venu</strong></h4>
-<p><strong>Présentation</strong>: FastAPI est moderne et basé sur des types standard, ce qui le rend rapide. Idéal pour des APIs modernes.</p>
-<p><strong>Installation</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="o">[</span>all<span class="o">]</span><span class="w"> </span>uvicorn
+<h4 id="fastapi-la-fusee"><strong>FastAPI : La fusée</strong> 🚀</h4>
+<p><strong>Présentation</strong> : Si Flask est un bloc Lego et Django un château, FastAPI est comme une fusée. Il vous emmène là où vous devez aller, et vite !</p>
+<p><strong>Installation</strong> :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="o">[</span>all<span class="o">]</span><span class="w"> </span>uvicorn
 </code></pre></div></p>
-<p><strong>Exemple basique</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="k">def</span> <span class="nf">lire_racine</span><span class="p">():</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Salut&quot;</span><span class="p">:</span> <span class="s2">&quot;avec FastAPI&quot;</span><span class="p">}</span>
+<p><strong>Documentation automatique</strong> : L'une des meilleures caractéristiques de FastAPI est qu'il génère une documentation interactive (Swagger UI) pour votre API. Une fois votre application lancée, accédez à <code>http://localhost:8000/docs</code>.</p>
+<p><strong>Exemple avec Pydantic</strong> :
+FastAPI utilise Pydantic pour la validation des données :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">class</span> <span class="nc">Article</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="n">titre</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="n">contenu</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/articles/&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">create_article</span><span class="p">(</span><span class="n">article</span><span class="p">:</span> <span class="n">Article</span><span class="p">):</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;titre&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">titre</span><span class="p">,</span> <span class="s2">&quot;contenu&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">contenu</span><span class="p">}</span>
 </code></pre></div></p>
-<p><strong>Démarrer l'application</strong>: 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>uvicorn<span class="w"> </span>nom_du_script:app<span class="w"> </span>--reload
-</code></pre></div>
-Accédez à <code>http://localhost:8000/</code>.</p>
 <hr />
-<p><strong>Conclusion</strong>:</p>
-<p>Le choix du framework dépend des besoins de votre projet. Flask offre flexibilité, Django fournit une suite d'outils complète, et FastAPI est optimal pour les performances élevées et les APIs modernes.</p>
+<p><strong>Conclusion</strong> :</p>
+<p>En matière de développement web en Python, il existe un framework pour chaque besoin. Flask pour la flexibilité, Django pour sa richesse, et FastAPI pour la rapidité et la modernité. Votre projet déterminera le meilleur choix ! 💼🔧🖥️</p>
 
 
 

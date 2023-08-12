@@ -8,20 +8,18 @@
       
       
       
-        <link rel="canonical" href="https://loop.brain.fr/bonjour-python/3-controle-flux-iterations/">
+        <link rel="canonical" href="https://loop.brain.fr/bonjour-python/18-projet-de-fin/">
       
       
-        <link rel="prev" href="../2-bases/">
+        <link rel="prev" href="../17-prochaines-etapes/">
       
-      
-        <link rel="next" href="../4-structures-de-donnees/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Contrôle de flux et Itération - Bonjour Python</title>
+        <title>Projet de Fin – API pour la Gestion Écologique avec ChatGPT et FastAPI - Bonjour Python</title>
       
     
     
@@ -72,11 +70,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#instructions-conditionnelles-if-elif-else" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contrôle de flux et Itération
+              Projet de Fin – API pour la Gestion Écologique avec ChatGPT et FastAPI
             
           </span>
         </div>
@@ -287,62 +280,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Contrôle de flux et itération
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../3-controle-flux-iterations/" class="md-nav__link">
         Contrôle de flux et itération
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instructions-conditionnelles-if-elif-else" class="md-nav__link">
-    Instructions conditionnelles (if, elif, else) 🌐
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boucles-for-et-while" class="md-nav__link">
-    Boucles (for et while) 🔄
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break-continue-et-pass" class="md-nav__link">
-    Break, Continue, et Pass ⏯
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -563,11 +505,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../18-projet-de-fin/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Projet de fin
       </a>
+      
     </li>
   
 
@@ -590,35 +540,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instructions-conditionnelles-if-elif-else" class="md-nav__link">
-    Instructions conditionnelles (if, elif, else) 🌐
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boucles-for-et-while" class="md-nav__link">
-    Boucles (for et while) 🔄
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break-continue-et-pass" class="md-nav__link">
-    Break, Continue, et Pass ⏯
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -635,94 +556,89 @@
   
 
 
-  <h1>Contrôle de flux et itération</h1>
+  <h1>Projet de fin</h1>
 
-<h4 id="instructions-conditionnelles-if-elif-else"><strong>Instructions conditionnelles (if, elif, else)</strong> 🌐</h4>
-<p>La prise de décision est fondamentale en programmation. Les instructions conditionnelles vous permettent d'exécuter certains codes en fonction de la validité d'une ou plusieurs conditions.</p>
-<ul>
-<li><strong>if:</strong> Il s'agit de la condition de base. Si la condition est vraie, le code sous cette condition s'exécute.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes majeur!&quot;</span><span class="p">)</span>
-</code></pre></div>
-Dans cet exemple, le message "Vous êtes majeur!" s'affiche uniquement si <code>age</code> est supérieur ou égal à 18.</p>
-<ul>
-<li><strong>elif:</strong> Utilisé pour ajouter d'autres conditions après un <code>if</code>. C'est une manière élégante d'écrire une série de conditions.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">note</span> <span class="o">=</span> <span class="mi">85</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">if</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excellent!&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">elif</span> <span class="mi">70</span> <span class="o">&lt;=</span> <span class="n">note</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bien joué!&quot;</span><span class="p">)</span>
-</code></pre></div>
-Le message "Bien joué!" s'affichera ici car la note est de 85.</p>
-<ul>
-<li><strong>else:</strong> Cette instruction capture tout ce qui n'a pas été capté par les conditions précédentes.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">jour</span> <span class="o">=</span> <span class="s2">&quot;dimanche&quot;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">if</span> <span class="n">jour</span> <span class="o">==</span> <span class="s2">&quot;samedi&quot;</span><span class="p">:</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&#39;est le week-end!&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ce n&#39;est pas samedi.&quot;</span><span class="p">)</span>
+<p><strong>Objectif</strong>:
+Créer une API qui permet aux utilisateurs de poser des questions sur les déchets et le recyclage, et d'obtenir des recommandations basées sur l'IA sur la façon de les traiter de manière écologique.</p>
+<hr />
+<p><strong>Étape 1 : Configuration et Installation</strong></p>
+<p>Assurez-vous d'avoir <code>pip</code> installé. Ensuite:</p>
+<ol>
+<li>
+<p>Installez FastAPI et Uvicorn:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="w"> </span>uvicorn
 </code></pre></div></p>
-<h4 id="boucles-for-et-while"><strong>Boucles (for et while)</strong> 🔄</h4>
-<p>L'une des forces de la programmation est de répéter des tâches. Les boucles permettent de réaliser ces répétitions efficacement.</p>
-<ul>
-<li><strong>for:</strong> Parfait pour parcourir une séquence. Il répète un bloc pour chaque élément d'une séquence.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">noms</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;Charlie&quot;</span><span class="p">]</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">for</span> <span class="n">nom</span> <span class="ow">in</span> <span class="n">noms</span><span class="p">:</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
-</code></pre></div>
-Chaque nom de la liste sera salué par un "Bonjour".</p>
-<ul>
-<li><strong>while:</strong> Répète un bloc tant qu'une condition est vraie.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">compteur</span> <span class="o">=</span> <span class="mi">3</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">while</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Compte à rebours: </span><span class="si">{</span><span class="n">compteur</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">compteur</span> <span class="o">-=</span> <span class="mi">1</span>
-</code></pre></div>
-La boucle affiche un compte à rebours de 3 à 1.</p>
-<h4 id="break-continue-et-pass"><strong>Break, Continue, et Pass</strong> ⏯</h4>
-<p>Vous souhaitez avoir un contrôle plus fin sur vos boucles? Voici trois outils pour cela.</p>
-<ul>
-<li><strong>break:</strong> C'est l'équivalent d'un bouton d'arrêt. Il met fin à la boucle immédiatement.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s2">&quot;Python&quot;</span><span class="p">:</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="k">break</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Résultat : P, y, t</span>
+</li>
+<li>
+<p>Installez OpenAI Python client:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>openai
 </code></pre></div></p>
-<ul>
-<li><strong>continue:</strong> Pensez-y comme un bouton "avance rapide". Il saute le reste de l'itération en cours.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s2">&quot;Python&quot;</span><span class="p">:</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="k">continue</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># Résultat : P, y, t, o, n</span>
-</code></pre></div></p>
-<ul>
-<li><strong>pass:</strong> C'est essentiellement un espace réservé. Utile lorsque vous devez respecter une syntaxe, mais que vous n'avez rien à exécuter.</li>
-</ul>
-<p>📝 <strong>Exemple :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s2">&quot;Python&quot;</span><span class="p">:</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="k">pass</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Résultat : P, y, t, h, o, n</span>
+</li>
+</ol>
+<p><strong>Étape 2 : Initialisation de FastAPI</strong></p>
+<ol>
+<li>Créez un nouveau fichier <code>main.py</code>.</li>
+<li>Initialisez votre application FastAPI:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</code></pre></div></li>
+</ol>
+<p><strong>Étape 3 : Intégration de ChatGPT</strong></p>
+<ol>
+<li>Configurez le client OpenAI avec votre clé API:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">openai</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">openai</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;YOUR_API_KEY&quot;</span>
 </code></pre></div>
-Le "h" est inclus dans le résultat car <code>pass</code> ne fait rien.</p>
+<ol>
+<li>Créez une route FastAPI pour poser des questions à ChatGPT:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">class</span> <span class="nc">Query</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">question</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/query/&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">def</span> <span class="nf">get_answer</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="n">Query</span><span class="p">):</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="n">response</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">Completion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>            <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;davinci&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>            <span class="n">prompt</span><span class="o">=</span><span class="n">query</span><span class="o">.</span><span class="n">question</span><span class="p">,</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>            <span class="n">max_tokens</span><span class="o">=</span><span class="mi">150</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>        <span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()}</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Erreur interne du serveur.&quot;</span><span class="p">)</span>
+</code></pre></div></li>
+</ol>
+<p><strong>Étape 4 : Exécuter l'API</strong></p>
+<p>Exécutez votre API avec Uvicorn:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>uvicorn<span class="w"> </span>main:app<span class="w"> </span>--reload
+</code></pre></div></p>
+<p>Votre serveur devrait maintenant tourner sur <code>http://127.0.0.1:8000/</code></p>
+<p><strong>Étape 5 : Test de l'API avec <code>curl</code></strong></p>
+<ol>
+<li>Ouvrez un terminal et exécutez la commande suivante:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>-X<span class="w"> </span><span class="s1">&#39;POST&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="s1">&#39;http://127.0.0.1:8000/query/&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;accept: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="s1">  &quot;question&quot;: &quot;Comment puis-je recycler les bouteilles en plastique?&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+<ol>
+<li>Vous devriez recevoir une réponse du serveur semblable à :</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;response&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Les bouteilles en plastique peuvent être recyclées en les déposant dans le bac de recyclage approprié. Assurez-vous de les rincer et de retirer les étiquettes. Dans certaines régions, vous pouvez également les ramener en magasin pour obtenir un remboursement. Consultez les directives locales pour plus de détails.&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<p><strong>Clap de fin</strong>:
+Vous avez maintenant une API basique qui offre des réponses orientées sur la gestion écologique des déchets. Bien sûr, ce n'est qu'un début. Vous pouvez étendre cette base avec plus de fonctionnalités, comme une authentification, la prise en compte de la localisation de l'utilisateur pour des conseils spécifiques à sa région, etc.</p>
 
 
 

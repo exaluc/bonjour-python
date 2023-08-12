@@ -21,7 +21,7 @@
     
     
       
-        <title>Bases - Bonjour Python</title>
+        <title>Les bases - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-bases-de-python" class="md-skip">
+        <a href="#syntaxe-et-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bases
+              Les bases
             
           </span>
         </div>
@@ -304,36 +304,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#les-bases-de-python" class="md-nav__link">
-    Les bases de Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Les bases de Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#syntaxe-et-structure" class="md-nav__link">
-    Syntaxe et Structure
+    Syntaxe et Structure ✍️
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#variables-et-types-de-donnees" class="md-nav__link">
-    Variables et Types de Données
+    Variables et Types de Données 🔢
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#operateurs-de-base" class="md-nav__link">
-    Opérateurs de base
+    Opérateurs de base ➕
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +557,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +597,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#les-bases-de-python" class="md-nav__link">
-    Les bases de Python
-  </a>
-  
-    <nav class="md-nav" aria-label="Les bases de Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#syntaxe-et-structure" class="md-nav__link">
-    Syntaxe et Structure
+    Syntaxe et Structure ✍️
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#variables-et-types-de-donnees" class="md-nav__link">
-    Variables et Types de Données
+    Variables et Types de Données 🔢
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#operateurs-de-base" class="md-nav__link">
-    Opérateurs de base
+    Opérateurs de base ➕
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,80 +637,77 @@
 
   <h1>Bases</h1>
 
-<h3 id="les-bases-de-python"><strong>Les bases de Python</strong></h3>
-<h4 id="syntaxe-et-structure"><strong>Syntaxe et Structure</strong></h4>
-<p>Python est reconnu pour sa lisibilité et sa clarté. Voici quelques éléments clés de la syntaxe de Python:</p>
+<h4 id="syntaxe-et-structure"><strong>Syntaxe et Structure</strong> ✍️</h4>
+<p>Python, reconnu pour sa lisibilité et sa simplicité, se distingue par sa syntaxe. Pour une initiation réussie, voici les éléments clés :</p>
 <ul>
-<li><strong>Indentation:</strong> Contrairement à de nombreux autres langages, Python utilise l'indentation (des espaces ou des tabulations) pour délimiter les blocs de code. Il est courant d'utiliser 4 espaces pour chaque niveau d'indentation.</li>
+<li><strong>Indentation:</strong> En Python, l'indentation (espaces ou tabulations) est primordiale pour délimiter des blocs de code. Traditionnellement, on utilise quatre espaces pour chaque niveau d'indentation. ⬅️</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;indentation est correcte!&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> est égal à 2.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> n&#39;est pas égal à 2.&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><strong>Commentaires:</strong> En Python, tout ce qui suit le symbole <code>#</code> sur une ligne est considéré comme un commentaire et n'est pas exécuté.</li>
+<li><strong>Commentaires:</strong> Le symbole <code>#</code> introduit un commentaire. Ils sont parfaits pour documenter et clarifier votre code. 💡</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Ceci est un commentaire</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ceci n&#39;est pas un commentaire&quot;</span><span class="p">)</span>  <span class="c1"># Mais ceci est un commentaire aussi!</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Voici une fonction d&#39;accueil</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span> <span class="nf">dire_bonjour</span><span class="p">():</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour tout le monde!&quot;</span><span class="p">)</span>  <span class="c1"># Et voilà un autre commentaire !</span>
 </code></pre></div>
 <ul>
-<li><strong>Instructions de fin:</strong> Contrairement à certains autres langages, Python n'utilise pas de point-virgule (<code>;</code>) à la fin des instructions. Chaque instruction est généralement sur une nouvelle ligne.</li>
+<li><strong>Instructions de fin:</strong> En Python, la simplicité prime : oubliez les points-virgules en fin d'instruction. Chaque nouvelle ligne équivaut à une nouvelle instruction. 📜</li>
 </ul>
-<h4 id="variables-et-types-de-donnees"><strong>Variables et Types de Données</strong></h4>
+<h4 id="variables-et-types-de-donnees"><strong>Variables et Types de Données</strong> 🔢</h4>
 <ul>
-<li><strong>Déclaration de variables:</strong> En Python, les variables ne nécessitent pas de déclaration explicite. Vous pouvez directement assigner une valeur à une variable.</li>
+<li><strong>Déclaration de variables:</strong> Pas besoin de définir le type de la variable en amont. Une simple affectation suffit. 🔄</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Jean&quot;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">prenom</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">42</span>
 </code></pre></div>
 <ul>
 <li>
-<p><strong>Types de données courants:</strong></p>
+<p><strong>Types de données courants:</strong> 📌</p>
 <ul>
-<li><strong>Entiers (<code>int</code>):</strong> <code>x = 5</code></li>
-<li><strong>Flottants (<code>float</code>):</strong> <code>y = 3.14</code></li>
-<li><strong>Chaînes de caractères (<code>str</code>):</strong> <code>z = "Bonjour"</code></li>
-<li><strong>Listes:</strong> <code>ma_liste = [1, 2, 3, 4]</code></li>
-<li><strong>Dictionnaires:</strong> <code>mon_dico = {"clé": "valeur", "nom": "Jean"}</code></li>
+<li><strong>Entiers (<code>int</code>):</strong> Comme le <code>7</code>. Exemple: <code>x = 10</code></li>
+<li><strong>Flottants (<code>float</code>):</strong> Avec des décimales, comme <code>5.7</code>. Exemple: <code>y = 5.7</code></li>
+<li><strong>Chaînes de caractères (<code>str</code>):</strong> Pour le texte. Exemple: <code>z = "Python est génial!"</code></li>
+<li><strong>Listes:</strong> Collections modifiables. Exemple: <code>ma_liste = [10, "Python", 5.5]</code></li>
+<li><strong>Dictionnaires:</strong> Avec des paires clé-valeur. Exemple: <code>mon_dico = {"langage": "Python", "version": 3.9}</code></li>
 </ul>
 </li>
 <li>
-<p><strong>Type dynamique:</strong> Python est un langage à typage dynamique, ce qui signifie que le type d'une variable est déterminé à l'exécution et peut être modifié.</p>
+<p><strong>Typage dynamique:</strong> Une variable peut changer de type à la volée. 🔄</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>          <span class="c1"># x est un int</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>   <span class="c1"># Maintenant, x est un str</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>         <span class="c1"># Ici, `a` est un entier</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;dix&quot;</span>      <span class="c1"># Là, `a` est une chaîne</span>
 </code></pre></div>
-<h4 id="operateurs-de-base"><strong>Opérateurs de base</strong></h4>
+<h4 id="operateurs-de-base"><strong>Opérateurs de base</strong> ➕</h4>
 <ul>
 <li>
-<p><strong>Opérateurs arithmétiques:</strong></p>
+<p><strong>Opérateurs arithmétiques:</strong> Pour les opérations mathématiques.</p>
 <ul>
-<li>Addition: <code>x + y</code></li>
-<li>Soustraction: <code>x - y</code></li>
-<li>Multiplication: <code>x * y</code></li>
-<li>Division: <code>x / y</code></li>
-<li>Division entière: <code>x // y</code></li>
-<li>Modulo (reste de la division): <code>x % y</code></li>
-<li>Puissance: <code>x ** y</code></li>
+<li>Addition: <code>3 + 4  # Résultat: 7</code></li>
+<li>Soustraction: <code>7 - 3  # Résultat: 4</code></li>
+<li>Multiplication: <code>4 * 3  # Résultat: 12</code></li>
+<li>... et d'autres que vous avez déjà énumérés.</li>
 </ul>
 </li>
 <li>
-<p><strong>Opérateurs de comparaison:</strong></p>
+<p><strong>Opérateurs de comparaison:</strong> Ils renvoient <code>True</code> ou <code>False</code>.</p>
 <ul>
-<li>Égal à: <code>x == y</code></li>
-<li>Différent de: <code>x != y</code></li>
-<li>Plus grand que: <code>x &gt; y</code></li>
-<li>Moins grand que: <code>x &lt; y</code></li>
-<li>Plus grand ou égal à: <code>x &gt;= y</code></li>
-<li>Moins grand ou égal à: <code>x &lt;= y</code></li>
+<li>Égal à: <code>4 == 4  # True</code></li>
+<li>Différent de: <code>4 != 5  # True</code></li>
+<li>... et d'autres que vous avez déjà mentionnés.</li>
 </ul>
 </li>
 <li>
-<p><strong>Opérateurs logiques:</strong></p>
+<p><strong>Opérateurs logiques:</strong> Pour combiner des conditions. </p>
 <ul>
-<li>ET logique: <code>x and y</code></li>
-<li>OU logique: <code>x or y</code></li>
-<li>NON logique: <code>not x</code></li>
+<li>ET logique: <code>True and False  # Résultat: False</code></li>
+<li>OU logique: <code>True or False  # Résultat: True</code></li>
+<li>NON logique: <code>not True  # Résultat: False</code></li>
 </ul>
 </li>
 </ul>

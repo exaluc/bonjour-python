@@ -21,7 +21,7 @@
     
     
       
-        <title>Gestion des erreurs et exceptions - Bonjour Python</title>
+        <title>Gestion des Erreurs et Exceptions - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gestion-des-erreurs-et-exceptions" class="md-skip">
+        <a href="#comprendre-les-erreurs-et-exceptions" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gestion des erreurs et exceptions
+              Gestion des Erreurs et Exceptions
             
           </span>
         </div>
@@ -409,36 +409,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gestion-des-erreurs-et-exceptions" class="md-nav__link">
-    Gestion des Erreurs et Exceptions
-  </a>
-  
-    <nav class="md-nav" aria-label="Gestion des Erreurs et Exceptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#comprendre-les-erreurs-et-exceptions" class="md-nav__link">
-    Comprendre les Erreurs et Exceptions
+    Comprendre les Erreurs et Exceptions 💡
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#blocs-try-except-et-finally" class="md-nav__link">
-    Blocs Try, Except et Finally
+      
+        <li class="md-nav__item">
+  <a href="#blocs-try-except-else-et-finally" class="md-nav__link">
+    Blocs Try, Except, Else et Finally 🛑
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#types-courants-dexceptions" class="md-nav__link">
+    Types courants d'Exceptions 📌
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levee-dexceptions" class="md-nav__link">
+    Levée d'Exceptions 🚀
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    Assertions ⛔
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exceptions-personnalisees" class="md-nav__link">
-    Exceptions Personnalisées
+    Exceptions Personnalisées 🎨
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -570,6 +578,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -595,36 +618,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gestion-des-erreurs-et-exceptions" class="md-nav__link">
-    Gestion des Erreurs et Exceptions
-  </a>
-  
-    <nav class="md-nav" aria-label="Gestion des Erreurs et Exceptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#comprendre-les-erreurs-et-exceptions" class="md-nav__link">
-    Comprendre les Erreurs et Exceptions
+    Comprendre les Erreurs et Exceptions 💡
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#blocs-try-except-et-finally" class="md-nav__link">
-    Blocs Try, Except et Finally
+      
+        <li class="md-nav__item">
+  <a href="#blocs-try-except-else-et-finally" class="md-nav__link">
+    Blocs Try, Except, Else et Finally 🛑
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#types-courants-dexceptions" class="md-nav__link">
+    Types courants d'Exceptions 📌
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levee-dexceptions" class="md-nav__link">
+    Levée d'Exceptions 🚀
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    Assertions ⛔
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exceptions-personnalisees" class="md-nav__link">
-    Exceptions Personnalisées
+    Exceptions Personnalisées 🎨
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -648,61 +679,70 @@
 
   <h1>Gestion des erreurs et exceptions</h1>
 
-<h3 id="gestion-des-erreurs-et-exceptions"><strong>Gestion des Erreurs et Exceptions</strong></h3>
-<p>La gestion des erreurs est essentielle pour tout programmeur. En Python, les erreurs peuvent être traitées efficacement à l'aide du mécanisme d'exceptions.</p>
-<h4 id="comprendre-les-erreurs-et-exceptions"><strong>Comprendre les Erreurs et Exceptions</strong></h4>
+<p>La robustesse d'un programme réside souvent dans sa capacité à gérer les imprévus. Python fournit des outils puissants pour traiter et anticiper les erreurs à travers le mécanisme d'exceptions.</p>
+<h4 id="comprendre-les-erreurs-et-exceptions"><strong>Comprendre les Erreurs et Exceptions</strong> 💡</h4>
 <ul>
 <li>
-<p><strong>Erreur</strong>: Il s'agit d'un problème dans le code qui empêche le programme de s'exécuter.</p>
+<p><strong>Erreur (Bug)</strong>: Il s'agit d'un défaut dans le code. Par exemple, une variable non définie.</p>
 </li>
 <li>
-<p><strong>Exception</strong>: Une fois que le programme est en cours d'exécution, s'il rencontre une situation qu'il ne sait pas comment gérer, il génère une exception.</p>
+<p><strong>Exception</strong>: C'est un événement qui se produit pendant l'exécution du programme et qui interrompt le flux normal d'instructions.</p>
 </li>
 </ul>
-<h4 id="blocs-try-except-et-finally"><strong>Blocs Try, Except et Finally</strong></h4>
+<h4 id="blocs-try-except-else-et-finally"><strong>Blocs Try, Except, Else et Finally</strong> 🛑</h4>
 <ul>
 <li>
-<p><strong>Bloc <code>try</code></strong>: Le code susceptible de générer une exception est placé dans le bloc <code>try</code>.</p>
+<p><strong>Bloc <code>try</code></strong>: Contient le code susceptible de générer une exception.</p>
 </li>
 <li>
-<p><strong>Bloc <code>except</code></strong>: Si une exception est générée dans le bloc <code>try</code>, le contrôle est immédiatement transféré au bloc <code>except</code>, où l'exception peut être traitée.</p>
+<p><strong>Bloc <code>except</code></strong>: Gère l'exception si elle est levée dans le bloc <code>try</code>.</p>
 </li>
 <li>
-<p><strong>Bloc <code>finally</code></strong>: Il est exécuté quel que soit le résultat des blocs <code>try</code> et <code>except</code>, généralement utilisé pour effectuer des opérations de nettoyage.</p>
+<p><strong>Bloc <code>else</code></strong>: Ce bloc est exécuté si aucune exception n'est levée dans le bloc <code>try</code>.</p>
+</li>
+<li>
+<p><strong>Bloc <code>finally</code></strong>: Exécuté toujours à la fin, qu'une exception soit levée ou non.</p>
 </li>
 </ul>
-<p>Exemple:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">resultat</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Division par zéro!&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">finally</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ce code s&#39;exécute quoi qu&#39;il arrive.&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<p>Dans l'exemple ci-dessus, le bloc <code>try</code> génère une exception <code>ZeroDivisionError</code>, le contrôle est donc transféré au bloc <code>except</code>, et après cela, le bloc <code>finally</code> est exécuté.</p>
-<h4 id="exceptions-personnalisees"><strong>Exceptions Personnalisées</strong></h4>
-<p>Vous pouvez définir vos propres exceptions en Python. Ces exceptions doivent être dérivées, directement ou indirectement, de la classe <code>Exception</code>.</p>
-<p>Exemple:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span> <span class="nc">ValeurTropHaute</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">pass</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">class</span> <span class="nc">ValeurTropBasse</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">pass</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">10</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">entree</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez un nombre: &quot;</span><span class="p">))</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="k">if</span> <span class="n">entree</span> <span class="o">&gt;</span> <span class="n">nombre</span><span class="p">:</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">raise</span> <span class="n">ValeurTropHaute</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="k">elif</span> <span class="n">entree</span> <span class="o">&lt;</span> <span class="n">nombre</span><span class="p">:</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        <span class="k">raise</span> <span class="n">ValeurTropBasse</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">except</span> <span class="n">ValeurTropHaute</span><span class="p">:</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cette valeur est trop haute!&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="k">except</span> <span class="n">ValeurTropBasse</span><span class="p">:</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cette valeur est trop basse!&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">resultat</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez un nombre: &quot;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer un nombre valide!&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La moitié de votre nombre est </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">finally</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Merci d&#39;avoir participé!&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>Dans cet exemple, nous avons créé deux exceptions personnalisées, <code>ValeurTropHaute</code> et <code>ValeurTropBasse</code>. Si l'utilisateur entre un nombre trop élevé ou trop bas, l'exception appropriée est levée à l'aide du mot-clé <code>raise</code>.</p>
+<h4 id="types-courants-dexceptions"><strong>Types courants d'Exceptions</strong> 📌</h4>
+<p>Python possède de nombreuses exceptions intégrées comme:</p>
+<ul>
+<li><code>ValueError</code>: Lorsqu'une fonction reçoit un argument de valeur correcte mais de type inapproprié.</li>
+<li><code>TypeError</code>: Lorsque une opération est appliquée au type inapproprié.</li>
+<li><code>FileNotFoundError</code>: Lorsqu'un fichier ou un répertoire est demandé mais n'existe pas.</li>
+</ul>
+<h4 id="levee-dexceptions"><strong>Levée d'Exceptions</strong> 🚀</h4>
+<p>Le mot-clé <code>raise</code> permet de lancer une exception spécifique, ce qui peut être utile pour signaler des erreurs dans votre propre code.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quel est votre âge? &quot;</span><span class="p">))</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;L&#39;âge ne peut pas être négatif!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="assertions"><strong>Assertions</strong> ⛔</h4>
+<p>Les assertions sont un outil de débogage, elles testent une condition et déclenchent une exception si la condition est fausse.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez votre âge: &quot;</span><span class="p">))</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">assert</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;L&#39;âge ne peut pas être négatif!&quot;</span>
+</code></pre></div>
+<h4 id="exceptions-personnalisees"><strong>Exceptions Personnalisées</strong> 🎨</h4>
+<p>La création d'exceptions personnalisées peut aider à clarifier votre code et à traiter des cas spécifiques.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span> <span class="nc">AgeNegatif</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception levée pour un âge négatif.&quot;&quot;&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">pass</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez votre âge: &quot;</span><span class="p">))</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">raise</span> <span class="n">AgeNegatif</span><span class="p">(</span><span class="s2">&quot;L&#39;âge ne peut pas être négatif!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<p>La gestion des erreurs est essentielle pour la robustesse d'un programme. La capacité de prévoir, gérer et communiquer les erreurs rend un programme plus fiable et plus convivial.</p>
 
 
 

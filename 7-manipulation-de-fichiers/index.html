@@ -21,7 +21,7 @@
     
     
       
-        <title>Gestion des fichiers - Bonjour Python</title>
+        <title>Manipulation de Fichiers - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#manipulation-de-fichiers" class="md-skip">
+        <a href="#lire-et-ecrire-des-fichiers" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gestion des fichiers
+              Manipulation de Fichiers
             
           </span>
         </div>
@@ -379,29 +379,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#manipulation-de-fichiers" class="md-nav__link">
-    Manipulation de Fichiers
-  </a>
-  
-    <nav class="md-nav" aria-label="Manipulation de Fichiers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#lire-et-ecrire-des-fichiers" class="md-nav__link">
-    Lire et Écrire des Fichiers
+    Lire et Écrire des Fichiers 📄
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#gestion-des-donnees-csv-json-et-xml" class="md-nav__link">
-    Gestion des données CSV, JSON et XML
+      
+        <li class="md-nav__item">
+  <a href="#jongler-avec-les-donnees-csv-json-et-xml" class="md-nav__link">
+    Jongler avec les données CSV, JSON et XML 🔄
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -563,6 +550,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -588,29 +590,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#manipulation-de-fichiers" class="md-nav__link">
-    Manipulation de Fichiers
-  </a>
-  
-    <nav class="md-nav" aria-label="Manipulation de Fichiers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#lire-et-ecrire-des-fichiers" class="md-nav__link">
-    Lire et Écrire des Fichiers
+    Lire et Écrire des Fichiers 📄
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#gestion-des-donnees-csv-json-et-xml" class="md-nav__link">
-    Gestion des données CSV, JSON et XML
+      
+        <li class="md-nav__item">
+  <a href="#jongler-avec-les-donnees-csv-json-et-xml" class="md-nav__link">
+    Jongler avec les données CSV, JSON et XML 🔄
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -634,114 +623,135 @@
 
   <h1>Gestion des fichiers</h1>
 
-<h3 id="manipulation-de-fichiers"><strong>Manipulation de Fichiers</strong></h3>
-<p>En Python, la manipulation de fichiers est facile. Vous pouvez lire et écrire des fichiers texte, des CSV, des JSON et même des XML.</p>
-<h4 id="lire-et-ecrire-des-fichiers"><strong>Lire et Écrire des Fichiers</strong></h4>
+<p>En Python, travailler avec des fichiers est un jeu d'enfant! Que ce soit des fichiers texte, des CSV, des JSON, ou des XML, Python vous a couvert.</p>
+<h4 id="lire-et-ecrire-des-fichiers"><strong>Lire et Écrire des Fichiers</strong> 📄</h4>
 <ul>
-<li><strong>Ouvrir un fichier</strong>: Utilisez la fonction <code>open()</code>. Par défaut, le fichier est ouvert en mode lecture ('r').</li>
+<li><strong>Ouvrir un fichier</strong> 🚪: Utilisez la fonction <code>open()</code>. Par défaut, le fichier est ouvert en mode lecture ('r').</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mon_fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
 <li>
-<p><strong>Lire un fichier</strong>: </p>
+<p><strong>Lire un fichier</strong> 📖:</p>
 </li>
 <li>
-<p><code>read()</code>: Pour lire le contenu complet.</p>
+<p><code>read()</code>: Pour absorber l'intégralité du fichier.</p>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">contenu</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">contenu</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><code>readline()</code>: Pour lire une ligne.</li>
+<li><code>readline()</code>: Si vous voulez juste un petit goût, soit une ligne.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">premiere_ligne</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">premiere_ligne</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><code>readlines()</code>: Pour lire toutes les lignes dans une liste.</li>
+<li><code>readlines()</code>: Pour dévorer toutes les lignes sous forme de liste.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">toutes_les_lignes</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">toutes_les_lignes</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><strong>Écrire dans un fichier</strong>: Ouvrez le fichier en mode écriture ('w'). Attention, cela écrasera le contenu existant.</li>
+<li><strong>Écrire dans un fichier</strong> ✍️: Ouvrez le fichier en mode écriture ('w'). Prenez garde, cela pourrait remplacer ce qui existait déjà!</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mon_fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Bonjour!&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Bonjour, monde!&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><strong>Fermer un fichier</strong>: Il est essentiel de fermer un fichier après l'avoir utilisé.</li>
+<li><strong>Fermer un fichier</strong> 🔐: C'est comme éteindre la lumière en quittant une pièce. C'est une bonne pratique!</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 <ul>
-<li><strong>Utiliser <code>with</code></strong>: Cette méthode est préférée car elle ferme automatiquement le fichier une fois le bloc de code sous-jacent exécuté.</li>
+<li><strong>Utiliser <code>with</code></strong> 🤝: Elle est la meilleure amie des programmeurs. Elle prend soin du fichier et le ferme automatiquement pour vous.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mon_fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">contenu</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">contenu</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="gestion-des-donnees-csv-json-et-xml"><strong>Gestion des données CSV, JSON et XML</strong></h4>
+<h4 id="jongler-avec-les-donnees-csv-json-et-xml"><strong>Jongler avec les données CSV, JSON et XML</strong> 🔄</h4>
 <ul>
-<li><strong>CSV (Comma-Separated Values)</strong>:</li>
+<li><strong>CSV (Comma-Separated Values)</strong> 📋:</li>
 </ul>
-<p>Python a un module intégré <code>csv</code> pour gérer les fichiers CSV.</p>
+<p>Python possède une boîte à outils intégrée nommée <code>csv</code>.</p>
 <ul>
 <li>
-<p>Lire un CSV:</p>
+<p>Lire un CSV 📜:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">csv</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.csv&#39;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">csvFile</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">csvFile</span><span class="p">:</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.csv&#39;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">lecteur_csv</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">lecteur_csv</span><span class="p">:</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ligne</span><span class="p">))</span>
 </code></pre></div>
 </li>
 <li>
-<p>Écrire dans un CSV:</p>
+<p>Écrire dans un CSV 🖊:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">donnees</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Jean&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Marie&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">]]</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.csv&#39;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">ecrivain</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">ecrivain</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">donnees</span><span class="p">)</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>JSON (JavaScript Object Notation)</strong> 🧬:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.csv&#39;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">])</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&quot;Jean&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
-</code></pre></div>
+<p>Avec le module <code>json</code>, transformer des objets Python en JSON et vice versa est un jeu d'enfant.</p>
 <ul>
-<li><strong>JSON (JavaScript Object Notation)</strong>:</li>
-</ul>
-<p>Le module <code>json</code> permet d'encoder et de décoder des données JSON.</p>
-<ul>
-<li>Lire un JSON:</li>
-</ul>
+<li>
+<p>Lire un JSON 🧐:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">donnees</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">donnees</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">donnees</span><span class="p">)</span>
 </code></pre></div>
-<ul>
-<li>Écrire dans un JSON:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">donnees</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Jean&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+</li>
+<li>
+<p>Écrire dans un JSON 🎨:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">personne</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Jean&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;ville&quot;</span><span class="p">:</span> <span class="s2">&quot;Paris&quot;</span><span class="p">}</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">donnees</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mon_fichier.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">personne</span><span class="p">,</span> <span class="n">fichier</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></div>
-<ul>
-<li><strong>XML (eXtensible Markup Language)</strong>:</li>
+</li>
+<li>
+<p><strong>XML (eXtensible Markup Language)</strong> 🌐:</p>
+</li>
 </ul>
-<p>Le module <code>xml.etree.ElementTree</code> est souvent utilisé pour parcourir et modifier des fichiers XML.</p>
+<p><code>xml.etree.ElementTree</code> est comme votre GPS pour naviguer à travers les fichiers XML.</p>
 <ul>
-<li>Lire un XML:</li>
-</ul>
+<li>
+<p>Lire un XML 🗺:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">tree</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;mon_fichier.xml&#39;</span><span class="p">)</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">root</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">arbre</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;mon_fichier.xml&#39;</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">racine</span> <span class="o">=</span> <span class="n">arbre</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
 <a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">root</span><span class="p">:</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">elem</span><span class="o">.</span><span class="n">attrib</span><span class="p">)</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">racine</span><span class="p">:</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">elem</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
-<ul>
-<li>Écrire dans un XML est un peu plus complexe. Vous créez des éléments, les ajoutez à l'arbre, puis sauvegardez l'arbre.</li>
+</li>
+<li>
+<p>Écrire dans un XML 🏗:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">racine</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;personnes&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">personne</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">racine</span><span class="p">,</span> <span class="s2">&quot;personne&quot;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">})</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">ET</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">personne</span><span class="p">,</span> <span class="s2">&quot;nom&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Jean&quot;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">ET</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">personne</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;30&quot;</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">arbre</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">ElementTree</span><span class="p">(</span><span class="n">racine</span><span class="p">)</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">arbre</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;mon_fichier.xml&quot;</span><span class="p">)</span>
+</code></pre></div>
+</li>
 </ul>
+<p>Voilà une plongée enrichie dans la manipulation de fichiers avec Python!</p>
 
 
 

@@ -21,7 +21,7 @@
     
     
       
-        <title>Structures de données - Bonjour Python</title>
+        <title>Structures de Données - Bonjour Python</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#structures-de-donnees" class="md-skip">
+        <a href="#listes-et-comprehensions-de-liste" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Structures de données
+              Structures de Données
             
           </span>
         </div>
@@ -334,43 +334,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structures-de-donnees" class="md-nav__link">
-    Structures de Données
-  </a>
-  
-    <nav class="md-nav" aria-label="Structures de Données">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#listes-et-comprehensions-de-liste" class="md-nav__link">
-    Listes et Compréhensions de Liste
+    Listes et Compréhensions de Liste 📜
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#tuples" class="md-nav__link">
-    Tuples
+    Tuples 🔒
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dictionnaires" class="md-nav__link">
-    Dictionnaires
+    Dictionnaires 🔑
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ensembles-sets" class="md-nav__link">
-    Ensembles (Sets)
+    Ensembles (Sets) 🔗
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -577,6 +564,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-projet-de-fin/" class="md-nav__link">
+        Projet de fin
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -602,43 +604,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structures-de-donnees" class="md-nav__link">
-    Structures de Données
-  </a>
-  
-    <nav class="md-nav" aria-label="Structures de Données">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#listes-et-comprehensions-de-liste" class="md-nav__link">
-    Listes et Compréhensions de Liste
+    Listes et Compréhensions de Liste 📜
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#tuples" class="md-nav__link">
-    Tuples
+    Tuples 🔒
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dictionnaires" class="md-nav__link">
-    Dictionnaires
+    Dictionnaires 🔑
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ensembles-sets" class="md-nav__link">
-    Ensembles (Sets)
+    Ensembles (Sets) 🔗
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -662,79 +651,84 @@
 
   <h1>Structures de données</h1>
 
-<h3 id="structures-de-donnees"><strong>Structures de Données</strong></h3>
-<h4 id="listes-et-comprehensions-de-liste"><strong>Listes et Compréhensions de Liste</strong></h4>
+<h4 id="listes-et-comprehensions-de-liste"><strong>Listes et Compréhensions de Liste</strong> 📜</h4>
 <ul>
-<li><strong>Listes:</strong> Une liste est une collection ordonnée et modifiable d'éléments. Les éléments d'une liste peuvent être de n'importe quel type.</li>
+<li><strong>Listes:</strong> Une liste est une collection ordonnée et modifiable. Les éléments peuvent varier en type. 👍</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ma_liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span>
 </code></pre></div>
 <ul>
-<li><strong>Accès aux éléments:</strong> Vous pouvez accéder à un élément de la liste en utilisant son index.</li>
+<li><strong>Accès aux éléments:</strong> Les indices font le lien ! 🎯</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">premier_element</span> <span class="o">=</span> <span class="n">ma_liste</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Résultat: 1</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">dernier_element</span> <span class="o">=</span> <span class="n">ma_liste</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Résultat: 3.14</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">cinquieme_element</span> <span class="o">=</span> <span class="n">ma_liste</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>  <span class="c1"># Résultat: &quot;python&quot;</span>
 </code></pre></div>
 <ul>
-<li><strong>Modification de la liste:</strong> Les listes sont mutables, ce qui signifie que vous pouvez modifier, ajouter ou supprimer des éléments.</li>
+<li><strong>Modification de la liste:</strong> La mutabilité des listes offre une grande flexibilité. 🔄</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ma_liste</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;JAVA&quot;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ma_liste</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Ajoute 5 à la fin de la liste</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ma_liste</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;JAVA&quot;</span>  <span class="c1"># Remplacer &quot;python&quot; par &quot;JAVA&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ma_liste</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>  <span class="c1"># Ajouter plusieurs éléments en une fois</span>
 </code></pre></div>
 <ul>
-<li><strong>Compréhensions de liste:</strong> C'est une manière concise de créer des listes.</li>
+<li><strong>Compréhensions de liste:</strong> Une manière élégante et rapide de générer des listes. ✨</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">carres</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>  <span class="c1"># [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">impairs</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># [1, 3, 5, 7, 9]</span>
 </code></pre></div>
-<h4 id="tuples"><strong>Tuples</strong></h4>
+<h4 id="tuples"><strong>Tuples</strong> 🔒</h4>
 <ul>
-<li><strong>Tuples:</strong> Un tuple est une collection ordonnée et non modifiable d'éléments.</li>
+<li><strong>Tuples:</strong> Similaires aux listes, mais immuables. Idéaux pour des données constantes. 🛑</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">mon_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">jours_semaine</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Lundi&quot;</span><span class="p">,</span> <span class="s2">&quot;Mardi&quot;</span><span class="p">,</span> <span class="s2">&quot;Mercredi&quot;</span><span class="p">,</span> <span class="s2">&quot;Jeudi&quot;</span><span class="p">,</span> <span class="s2">&quot;Vendredi&quot;</span><span class="p">,</span> <span class="s2">&quot;Samedi&quot;</span><span class="p">,</span> <span class="s2">&quot;Dimanche&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
-<li><strong>Accès aux éléments:</strong> Semblable aux listes, mais gardez à l'esprit que les tuples sont immuables.</li>
+<li><strong>Accès aux éléments:</strong> Comme pour les listes, mais sans modification possible. </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">premier_element</span> <span class="o">=</span> <span class="n">mon_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Résultat: 1</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">jour1</span> <span class="o">=</span> <span class="n">jours_semaine</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Résultat: &quot;Lundi&quot;</span>
 </code></pre></div>
-<h4 id="dictionnaires"><strong>Dictionnaires</strong></h4>
+<h4 id="dictionnaires"><strong>Dictionnaires</strong> 🔑</h4>
 <ul>
-<li><strong>Dictionnaires:</strong> Une collection non ordonnée de paires clé-valeur.</li>
+<li><strong>Dictionnaires:</strong> Paires clé-valeur pour un stockage organisé et efficace. 📔</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">mon_dico</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Jean&quot;</span><span class="p">,</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="s2">&quot;ville&quot;</span><span class="p">:</span> <span class="s2">&quot;Paris&quot;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">personne</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="s2">&quot;prénom&quot;</span><span class="p">:</span> <span class="s2">&quot;Jean&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Dupont&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="s2">&quot;hobbies&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;lecture&quot;</span><span class="p">,</span> <span class="s2">&quot;cinéma&quot;</span><span class="p">,</span> <span class="s2">&quot;randonnée&quot;</span><span class="p">]</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><strong>Accès et modification:</strong> </li>
+<li><strong>Accès et modification:</strong> Grâce aux clés, c'est un jeu d'enfant ! 🎲</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">nom</span> <span class="o">=</span> <span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">]</span>  <span class="c1"># Résultat: &quot;Jean&quot;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">31</span>   <span class="c1"># Modifie l&#39;âge à 31</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">nom</span> <span class="o">=</span> <span class="n">personne</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">]</span>  <span class="c1"># Résultat: &quot;Dupont&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">personne</span><span class="p">[</span><span class="s2">&quot;hobbies&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;natation&quot;</span><span class="p">)</span>  <span class="c1"># Ajout d&#39;un hobby</span>
 </code></pre></div>
 <ul>
-<li><strong>Ajout et suppression de clés:</strong></li>
+<li><strong>Méthodes utiles:</strong> Les dictionnaires ont de nombreuses méthodes pour faciliter la vie. 🧰</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;profession&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Ingénieur&quot;</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">del</span> <span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;ville&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">cles</span> <span class="o">=</span> <span class="n">personne</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>  <span class="c1"># Renvoie toutes les clés</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">valeurs</span> <span class="o">=</span> <span class="n">personne</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>  <span class="c1"># Renvoie toutes les valeurs</span>
 </code></pre></div>
-<h4 id="ensembles-sets"><strong>Ensembles (Sets)</strong></h4>
+<h4 id="ensembles-sets"><strong>Ensembles (Sets)</strong> 🔗</h4>
 <ul>
-<li><strong>Sets:</strong> Une collection non ordonnée d'éléments uniques.</li>
+<li><strong>Sets:</strong> Collections d'éléments uniques. Parfait pour éliminer les doublons ! 🚫</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">mon_ensemble</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">nombres</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>  <span class="c1"># Résultat: {1, 2, 3, 4, 5}</span>
 </code></pre></div>
-<p>Cela crée un ensemble avec les éléments <code>{1, 2, 3, 4, 5}</code> car les ensembles ne permettent pas les doublons.</p>
 <ul>
-<li><strong>Opérations courantes sur les ensembles:</strong> union, intersection, différence.</li>
+<li><strong>Opérations courantes:</strong> Les sets sont idéaux pour les opérations mathématiques.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">union</span> <span class="o">=</span> <span class="n">A</span> <span class="o">|</span> <span class="n">B</span>          <span class="c1"># {1, 2, 3, 4, 5, 6}</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">intersection</span> <span class="o">=</span> <span class="n">A</span> <span class="o">&amp;</span> <span class="n">B</span>   <span class="c1"># {3, 4}</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">difference</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">B</span>     <span class="c1"># {1, 2}</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">seulement_A</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>  <span class="c1"># {1, 2}</span>
 </code></pre></div>
+<hr />
+<p><strong>Conseils pratiques:</strong> 🚀</p>
+<ul>
+<li>Pour des données fixes et immuables, préférez les tuples.</li>
+<li>Pour stocker des paires clé-valeur, utilisez les dictionnaires.</li>
+<li>Si vous devez éliminer des doublons d'une liste, convertissez-la en set, puis à nouveau en liste.</li>
+<li>Les compréhensions de liste sont puissantes, utilisez-les pour rendre votre code plus pythonique.</li>
+</ul>
 
 
 
