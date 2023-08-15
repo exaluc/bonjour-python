@@ -28,7 +28,6 @@ Avec l'importance croissante des applications I/O-bound, l'asynchronicité est d
 
 - **Participation aux Conférences**: Des événements tels que PyCon ou DjangoCon sont des occasions fantastiques de networking et d'apprentissage.
 
-- **Plateformes d'apprentissage**: Sites comme LeetCode, HackerRank et Project Euler sont excellents pour aiguiser vos compétences en résolution de problèmes.
 
 - **Blogs et Articles**: Suivez des blogs influents, comme Real Python ou le blog officiel de Python, pour obtenir des tutoriels et des articles approfondis.
 
